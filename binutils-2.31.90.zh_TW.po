@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: binutils 2.23.2\n"
 "Report-Msgid-Bugs-To: bug-binutils@gnu.org\n"
 "POT-Creation-Date: 2019-01-19 16:32+0000\n"
-"PO-Revision-Date: 2019-10-10 21:49+0800\n"
+"PO-Revision-Date: 2019-10-10 21:50+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -261,7 +261,7 @@ msgstr "  [u]          - 只替換比目前封存內容更新的檔案\n"
 #: ar.c:321
 #, c-format
 msgid " generic modifiers:\n"
-msgstr " 通用修飾符：\n"
+msgstr " 一般修飾符：\n"
 
 #: ar.c:322
 #, c-format
@@ -1590,7 +1590,7 @@ msgstr "pwait 回傳：%s"
 #: dllwrap.c:478
 #, c-format
 msgid "  Generic options:\n"
-msgstr "  通用選項：\n"
+msgstr "  一般選項：\n"
 
 #: dllwrap.c:479
 #, c-format
@@ -9374,7 +9374,7 @@ msgstr ""
 #: readelf.c:14725
 #, fuzzy, c-format
 msgid "generic\n"
-msgstr "通用\n"
+msgstr "一般\n"
 
 #: readelf.c:14760
 #, fuzzy, c-format
