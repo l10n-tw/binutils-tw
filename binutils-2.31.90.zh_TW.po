@@ -7,10 +7,10 @@
 # pan93412 <pan93412@gmail.com>, 2019.
 msgid ""
 msgstr ""
-"Project-Id-Version: binutils 2.23.2\n"
+"Project-Id-Version: binutils 2.31.90\n"
 "Report-Msgid-Bugs-To: bug-binutils@gnu.org\n"
 "POT-Creation-Date: 2019-01-19 16:32+0000\n"
-"PO-Revision-Date: 2019-10-11 01:36+0800\n"
+"PO-Revision-Date: 2019-10-11 01:58+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
@@ -126,7 +126,7 @@ msgid ""
 "Usage: %s [emulation options] [-]{dmpqrstx}[abcDfilMNoOPsSTuvV] [--plugin <"
 "name>] [member-name] [count] archive-file file...\n"
 msgstr ""
-"用法：%s [模擬選項] [-]{dmpqrstx}[abcDfilMNoOPsSTuvV] [--plugin <名稱>] [成員名] [計數] 封存"
+"用法：%s [模擬選項] [-]{dmpqrstx}[abcDfilMNoOPsSTuvV] [--plugin <名稱>] [成員名稱] [計數] 封存"
 " 檔案…\n"
 
 #: ar.c:280
@@ -135,7 +135,7 @@ msgstr ""
 msgid ""
 "Usage: %s [emulation options] [-]{dmpqrstx}[abcDfilMNoOPsSTuvV] [member-name]"
 " [count] archive-file file...\n"
-msgstr "用法：%s [模擬選項] [-]{dmpqrstx}[abcDfilMNoOPsSTuvV] [成員名] [計數] 封存 檔案…\n"
+msgstr "用法：%s [模擬選項] [-]{dmpqrstx}[abcDfilMNoOPsSTuvV] [成員名稱] [計數] 封存 檔案…\n"
 
 #: ar.c:288
 #, c-format
@@ -281,7 +281,7 @@ msgstr "  [S]          - 不要建立符號表\n"
 #: ar.c:325
 #, c-format
 msgid "  [T]          - make a thin archive\n"
-msgstr "  [T]        - 產生一個簡單封存\n"
+msgstr "  [T]          - 產生一個簡單封存\n"
 
 #: ar.c:326
 #, c-format
@@ -5979,7 +5979,7 @@ msgstr ""
 #: objdump.c:2978
 #, c-format
 msgid "reading %s section of %s failed: %s"
-msgstr "讀取 %2$s 的 %1$s 區段失敗：%s"
+msgstr "讀取 %2$s 的 %1$s 區段失敗：%3$s"
 
 #: objdump.c:3022
 #, c-format
