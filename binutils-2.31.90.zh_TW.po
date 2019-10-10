@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: binutils 2.23.2\n"
 "Report-Msgid-Bugs-To: bug-binutils@gnu.org\n"
 "POT-Creation-Date: 2019-01-19 16:32+0000\n"
-"PO-Revision-Date: 2019-10-11 01:29+0800\n"
+"PO-Revision-Date: 2019-10-11 01:36+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -11778,12 +11778,12 @@ msgstr "無效的整數引數 %s"
 #: strings.c:270
 #, c-format
 msgid "invalid minimum string length %d"
-msgstr ""
+msgstr "無效的最小字串長度 %d"
 
 #: strings.c:341
-#, fuzzy, c-format
+#, c-format
 msgid "%s: Reading section %s failed: %s"
-msgstr "讀取區段失敗"
+msgstr "%s：讀取 %s 區段失敗：%s"
 
 #: strings.c:699
 #, c-format
@@ -11797,6 +11797,8 @@ msgid ""
 " [default]\n"
 "  -d --data                 Only scan the data sections in the file\n"
 msgstr ""
+"  -a - --all                掃描整個檔案，而不只資料區段 [預設值]\n"
+"  -d --data                 只掃描檔案中的資料區段\n"
 
 #: strings.c:707
 #, c-format
@@ -11805,9 +11807,11 @@ msgid ""
 "  -d --data                 Only scan the data sections in the file"
 " [default]\n"
 msgstr ""
+"  -a - --all                掃描整個檔案，而不只資料區段\n"
+"  -d --data                 只掃描檔案中的資料區段 [預設值]\n"
 
 #: strings.c:711
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  -f --print-file-name      Print the name of the file before each string\n"
 "  -n --bytes=[number]       Locate & print any NUL-terminated sequence of at\n"
@@ -11826,9 +11830,20 @@ msgid ""
 "  -h --help                 Display this information\n"
 "  -v -V --version           Print the program's version number\n"
 msgstr ""
-"<number><BFDNAME><file>                   讀取選項從 <file>\n"
-"  -h --help                 顯示這個資訊\n"
-"  -v -V --version           列印程式版本編號\n"
+"  -f --print-file-name      在每個字串前輸出檔名\n"
+"  -n --bytes=[number]       定位並輸出任何以 NUL 結尾的序列 (?)\n"
+"  -<長度>                   至少 <長度> (數字) 個字元 (預設是 4)。\n"
+"  -t --radix={o,d,x}        使用 base 8、10 或 16 輸出字串位置\n"
+"  -w --include-all-whitespace 將所有空白包含在有效字串內\n"
+"  -o                        --radix=o 的別名\n"
+"  -T --target=<BFDNAME>     指定二進位檔格式\n"
+"  -e --encoding={s,S,b,l,B,L} 選擇字元長度及端序：\n"
+"                            s = 7-bit, S = 8-bit, {b,l} = 16-bit, {B,L} ="
+" 32-bit\n"
+"  -s --output-separator=<字串> 用來分隔輸出字串的 <字串>。\n"
+"  @<檔案>                   讀取 <檔案> 的選項\n"
+"  -h --help                 顯示此說明\n"
+"  -v -V --version           輸出程式的版本號碼\n"
 
 #: sysdump.c:51
 msgid "*undefined*"
