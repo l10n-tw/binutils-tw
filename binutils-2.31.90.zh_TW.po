@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: binutils 2.23.2\n"
 "Report-Msgid-Bugs-To: bug-binutils@gnu.org\n"
 "POT-Creation-Date: 2019-01-19 16:32+0000\n"
-"PO-Revision-Date: 2019-10-11 01:19+0800\n"
+"PO-Revision-Date: 2019-10-11 01:29+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -11513,7 +11513,7 @@ msgid " If no input file(s) are specified, a.out is assumed\n"
 msgstr " 如果沒有指定輸入檔案，預設為 a.out\n"
 
 #: size.c:79
-#, fuzzy, c-format
+#, c-format
 msgid ""
 " The options are:\n"
 "  -A|-B     --format={sysv|berkeley}  Select output style (default is %s)\n"
@@ -11528,83 +11528,86 @@ msgid ""
 "  -v        --version                 Display the program's version\n"
 "\n"
 msgstr ""
-"<bfdname>        設定二進位檔案格式\n"
-"           @<file>                   讀取選項從 <file>\n"
-"  -h        --help                    顯示這個資訊\n"
+" 選項有：\n"
+"  -A|-B     --format={sysv|berkeley}  選擇輸出格式 (預設是 %s)\n"
+"  -o|-d|-x  --radix={8|10|16}         使用八、十、十六進位顯示數字\n"
+"  -t        --totals                  顯示總計大小 (僅適用於 Berkeley)\n"
+"            --common                  顯示 *COM* 符號 (sym) 的總計大小\n"
+"            --target=<bfdname>        設定二進位檔格式\n"
+"            @<檔案>                   讀取 <檔案> 的選項\n"
+"  -h        --help                    顯示此資訊\n"
 "  -v        --version                 顯示程式版本\n"
 "\n"
 
 #: size.c:160
 #, c-format
 msgid "invalid argument to --format: %s"
-msgstr "--format 的無效引數：%s"
+msgstr "--format 有無效引數：%s"
 
 #: size.c:187
 #, c-format
 msgid "Invalid radix: %s\n"
-msgstr "無效的 radix: %s\n"
+msgstr "無效的基數: %s\n"
 
 #: srconv.c:130
 msgid "Checksum failure"
-msgstr ""
+msgstr "總和檢查失敗"
 
 #. FIXME: Return error status.
 #: srconv.c:142
 msgid "Failed to write checksum"
-msgstr ""
+msgstr "無法寫入總和檢查碼"
 
 #: srconv.c:182
-#, fuzzy, c-format
+#, c-format
 #| msgid "IEEE unsupported integer type size %u\n"
 msgid "Unsupported integer write size: %d"
-msgstr "IEEE 不支援的整數類型大小 %u\n"
+msgstr "不支援整數輸出大小：%d"
 
 #. FIXME: Return error status.
 #: srconv.c:268
-#, fuzzy
 #| msgid "Failed to read in number of buckets\n"
 msgid "Failed to write TR block"
-msgstr "讀入存儲桶數量失敗\n"
+msgstr "無法寫入 TR 區塊"
 
 #: srconv.c:359
 #, c-format
 msgid "Unrecognized H8300 sub-architecture: %ld"
-msgstr ""
+msgstr "無法識別的 H8300 子系統架構：%ld"
 
 #: srconv.c:377
-#, fuzzy, c-format
+#, c-format
 #| msgid "Supported architectures:"
 msgid "Unsupported architecture: %d"
-msgstr "支援的系統架構："
+msgstr "不支援系統架構：%d"
 
 #: srconv.c:831
-#, fuzzy, c-format
+#, c-format
 #| msgid "Unrecognized XCOFF type %d\n"
 msgid "Unrecognised type: %d"
-msgstr "無法識別的 XCOFF 類型 %d\n"
+msgstr "無法識別類型：%d"
 
 #: srconv.c:957
-#, fuzzy, c-format
+#, c-format
 #| msgid "Unrecognized XCOFF type %d\n"
 msgid "Unrecognised coff symbol type: %d"
-msgstr "無法識別的 XCOFF 類型 %d\n"
+msgstr "無法識別 coff 符號類型：%d"
 
 #: srconv.c:1019 srconv.c:1119
 #, c-format
 msgid "Unrecognised coff symbol visibility: %d"
-msgstr ""
+msgstr "無法識別 coff 符號可見性：%d"
 
 #: srconv.c:1045 srconv.c:1090
-#, fuzzy, c-format
+#, c-format
 #| msgid "Unrecognized debug section: %s\n"
 msgid "Unrecognised coff symbol location: %d"
-msgstr "無法識別的除錯區段：%s\n"
+msgstr "無法識別 coff 符號位置：%d"
 
 #. FIXME: Return error status.
 #: srconv.c:1424
-#, fuzzy
 msgid "Failed to write CS struct"
-msgstr "建立輸出區段時失敗"
+msgstr "無法寫入 CS 建構體"
 
 #: srconv.c:1696
 #, c-format
@@ -11612,7 +11615,7 @@ msgid "Convert a COFF object file into a SYSROFF object file\n"
 msgstr "將 COFF 目標檔案轉換為 SYSROFF 目標檔案\n"
 
 #: srconv.c:1697
-#, fuzzy, c-format
+#, c-format
 msgid ""
 " The options are:\n"
 "  -q --quick       (Obsolete - ignored)\n"
@@ -11622,9 +11625,13 @@ msgid ""
 "  -h --help        Display this information\n"
 "  -v --version     Print the program's version number\n"
 msgstr ""
-"<file>          讀取選項從 <file>\n"
-"  -h --help        顯示這個資訊\n"
-"  -v --version     列印程式版本編號\n"
+" 選項有：\n"
+"  -q --quick       (已廢棄 - 忽略)\n"
+"  -n --noprescan   不執行將 common 轉換成 def 的掃描\n"
+"  -d --debug       顯示進行資訊\n"
+"  @<檔案>          讀取 <檔案> 的選項\n"
+"  -h --help        顯示此資訊\n"
+"  -v --version     輸出程式版本號碼\n"
 
 #: srconv.c:1788
 msgid "input and output files must be different"
@@ -11633,7 +11640,7 @@ msgstr "輸入輸出檔案必須不同"
 #: srconv.c:1844
 #, c-format
 msgid "unable to open output file %s"
-msgstr "無法打開輸出檔案 %s"
+msgstr "無法開啟輸出檔案 %s"
 
 #: stabs.c:344 stabs.c:1772
 msgid "numeric overflow"
