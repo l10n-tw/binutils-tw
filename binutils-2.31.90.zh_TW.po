@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: binutils 2.23.2\n"
 "Report-Msgid-Bugs-To: bug-binutils@gnu.org\n"
 "POT-Creation-Date: 2019-01-19 16:32+0000\n"
-"PO-Revision-Date: 2019-10-10 21:46+0800\n"
+"PO-Revision-Date: 2019-10-10 21:49+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -506,7 +506,7 @@ msgstr "%s：尚未指定輸出封存\n"
 #: arsup.c:250 arsup.c:293 arsup.c:335 arsup.c:358 arsup.c:424
 #, c-format
 msgid "%s: no open output archive\n"
-msgstr "%s：未打開輸出封存\n"
+msgstr "%s：沒有打開的輸出封存\n"
 
 #: arsup.c:266 arsup.c:379 arsup.c:405
 #, c-format
@@ -531,7 +531,7 @@ msgstr "%s：未打開封存\n"
 #: binemul.c:38
 #, c-format
 msgid "  No emulation specific options\n"
-msgstr "  沒有模擬特有的選項\n"
+msgstr "  沒有模擬特定的選項\n"
 
 #. Macros for common output.
 #: binemul.h:49
@@ -542,7 +542,7 @@ msgstr " 模擬選項：\n"
 #: bucomm.c:156
 #, c-format
 msgid "can't set BFD default target to `%s': %s"
-msgstr "無法將 BFD 預設標的設置為「%s」：%s"
+msgstr "無法將 BFD 預設的目標設置成「%s」：%s"
 
 #: bucomm.c:168
 #, c-format
