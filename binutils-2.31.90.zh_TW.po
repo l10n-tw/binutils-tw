@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: binutils 2.23.2\n"
 "Report-Msgid-Bugs-To: bug-binutils@gnu.org\n"
 "POT-Creation-Date: 2019-01-19 16:32+0000\n"
-"PO-Revision-Date: 2019-10-10 21:50+0800\n"
+"PO-Revision-Date: 2019-10-10 21:51+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -238,7 +238,7 @@ msgstr "  [f]          - 截去插入的檔案名稱\n"
 #: ar.c:317
 #, c-format
 msgid "  [P]          - use full path names when matching\n"
-msgstr "  [P]          - 在匹配時使用完整的路徑名稱\n"
+msgstr "  [P]          - 在符合時使用完整的路徑名稱\n"
 
 #: ar.c:318
 #, c-format
@@ -547,7 +547,7 @@ msgstr "無法將 BFD 預設的目標設置成「%s」：%s"
 #: bucomm.c:168
 #, c-format
 msgid "%s: Matching formats:"
-msgstr "%s：匹配格式："
+msgstr "%s：符合格式："
 
 #: bucomm.c:183
 #, c-format
