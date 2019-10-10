@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: binutils 2.23.2\n"
 "Report-Msgid-Bugs-To: bug-binutils@gnu.org\n"
 "POT-Creation-Date: 2019-01-19 16:32+0000\n"
-"PO-Revision-Date: 2019-10-10 21:30+0800\n"
+"PO-Revision-Date: 2019-10-10 21:46+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -176,18 +176,18 @@ msgstr "  r[ab][f][u]  - 替換封存中已有的檔案或加入新檔案\n"
 #: ar.c:295
 #, c-format
 msgid "  s            - act as ranlib\n"
-msgstr ""
+msgstr "  s            - 跟 ranlib 的行為一樣\n"
 
 #: ar.c:296
-#, fuzzy, c-format
+#, c-format
 #| msgid "  t            - display contents of archive\n"
 msgid "  t[O][v]      - display contents of the archive\n"
-msgstr "  t            - 顯示封存的內容\n"
+msgstr "  t[O][v]      - 顯示封存的內容\n"
 
 #: ar.c:297
 #, c-format
 msgid "  x[o]         - extract file(s) from the archive\n"
-msgstr "  x[o]         - 從封存中分解檔案\n"
+msgstr "  x[o]         - 從封存中擷取檔案\n"
 
 #: ar.c:298
 #, c-format
@@ -207,23 +207,23 @@ msgstr "  [b]          - 將檔案置於 [成員名] 之前 (於 [i] 相同)\n"
 #: ar.c:303
 #, c-format
 msgid "  [D]          - use zero for timestamps and uids/gids (default)\n"
-msgstr ""
+msgstr "  [D]          - 使用 0 作為時間戳及 UID/GID (預設值)\n"
 
 #: ar.c:305
-#, fuzzy, c-format
+#, c-format
 #| msgid "  [P]          - use full path names when matching\n"
 msgid "  [U]          - use actual timestamps and uids/gids\n"
-msgstr "  [P]          - 在匹配時使用完整的路徑名\n"
+msgstr "  [U]          - 使用實際的時間戳及 UID/GID\n"
 
 #: ar.c:310
 #, c-format
 msgid "  [D]          - use zero for timestamps and uids/gids\n"
-msgstr ""
+msgstr "  [D]          - 使用 0 作為時間戳及 UID/GID\n"
 
 #: ar.c:312
 #, c-format
 msgid "  [U]          - use actual timestamps and uids/gids (default)\n"
-msgstr ""
+msgstr "  [U]          - 使用實際的時間戳及 UID/GID (預設值)\n"
 
 #: ar.c:315
 #, c-format
@@ -238,7 +238,7 @@ msgstr "  [f]          - 截去插入的檔案名稱\n"
 #: ar.c:317
 #, c-format
 msgid "  [P]          - use full path names when matching\n"
-msgstr "  [P]          - 在匹配時使用完整的路徑名\n"
+msgstr "  [P]          - 在匹配時使用完整的路徑名稱\n"
 
 #: ar.c:318
 #, c-format
@@ -246,10 +246,10 @@ msgid "  [o]          - preserve original dates\n"
 msgstr "  [o]          - 保留原來的日期\n"
 
 #: ar.c:319
-#, fuzzy, c-format
+#, c-format
 #| msgid "  t            - display contents of archive\n"
 msgid "  [O]          - display offsets of files in the archive\n"
-msgstr "  t            - 顯示封存的內容\n"
+msgstr "  t            - 顯示封存中的檔案位移\n"
 
 #: ar.c:320
 #, c-format
@@ -294,22 +294,22 @@ msgid "  [V]          - display the version number\n"
 msgstr "  [V]          - 顯示版本號\n"
 
 #: ar.c:328
-#, fuzzy, c-format
+#, c-format
 msgid "  @<file>      - read options from <file>\n"
-msgstr " @<file>      - 讀取選項從 <file>\n"
+msgstr "  @<file>      - 從 <檔案> 讀取選項\n"
 
 #: ar.c:329
-#, fuzzy, c-format
+#, c-format
 msgid "  --target=BFDNAME - specify the target object format as BFDNAME\n"
-msgstr "  --target=BFDNAME - 指定目標物件格式做為 BFDNAME\n"
+msgstr "  --target=BFDNAME - 將目標物件格式指定成 BFDNAME\n"
 
 #: ar.c:331
 #, c-format
 msgid " optional:\n"
-msgstr " 選項：\n"
+msgstr " 選用項目：\n"
 
 #: ar.c:332
-#, fuzzy, c-format
+#, c-format
 msgid "  --plugin <p> - load the specified plugin\n"
 msgstr "  --plugin <p> - 載入指定的外掛程式\n"
 
@@ -324,21 +324,21 @@ msgid " Generate an index to speed access to archives\n"
 msgstr " 產生索引以加快對封存的存取\n"
 
 #: ar.c:355
-#, fuzzy, c-format
+#, c-format
 msgid ""
 " The options are:\n"
 "  @<file>                      Read options from <file>\n"
 msgstr ""
-" 選項是：\n"
-" @<file>                      讀取選項從 <file>\n"
+" <選項> 有：\n"
+"  @<file>                      讀取 <檔案> 中的選項\n"
 
 #: ar.c:358
-#, fuzzy, c-format
+#, c-format
 msgid "  --plugin <name>              Load the specified plugin\n"
-msgstr "  --plugin <name>              載入指定的外掛程式\n"
+msgstr "  --plugin <名稱>              載入指定的外掛程式\n"
 
 #: ar.c:362
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "  -t                           Update the archive's symbol map timestamp\n"
 #| "  -h --help                    Print this help message\n"
@@ -347,12 +347,11 @@ msgid ""
 "  -D                           Use zero for symbol map timestamp (default)\n"
 "  -U                           Use an actual symbol map timestamp\n"
 msgstr ""
-"  -t                           更新封存的符號映射時間戳記\n"
-"  -h --help                    列印本求助訊息\n"
-"  -v --version                 列印版本資訊\n"
+"  -D                           使用 0 作為符號映射時間戳 (預設值)\n"
+"  -U                           使用實際符號映射時間戳\n"
 
 #: ar.c:366
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "  -t                           Update the archive's symbol map timestamp\n"
 #| "  -h --help                    Print this help message\n"
@@ -361,9 +360,8 @@ msgid ""
 "  -D                           Use zero for symbol map timestamp\n"
 "  -U                           Use actual symbol map timestamp (default)\n"
 msgstr ""
-"  -t                           更新封存的符號映射時間戳記\n"
-"  -h --help                    列印本求助訊息\n"
-"  -v --version                 列印版本資訊\n"
+"  -D                           使用 0 作為符號映射時間戳\n"
+"  -U                           使用實際符號映射時間戳 (預設值)\n"
 
 #: ar.c:369
 #, c-format
@@ -383,11 +381,11 @@ msgstr "指定了兩個不同的操作選項"
 #: ar.c:587 ar.c:647 nm.c:1781
 #, c-format
 msgid "sorry - this program has been built without plugin support\n"
-msgstr ""
+msgstr "抱歉 - 這個程式編譯時沒加外掛程式支援\n"
 
 #: ar.c:778
 msgid "no operation specified"
-msgstr "沒有指定操作"
+msgstr "沒有指定動作"
 
 #: ar.c:781
 msgid "`u' is only meaningful with the `r' option."
@@ -399,11 +397,11 @@ msgstr "「u」在使用「D」選項的時候沒有意義。"
 
 #: ar.c:787
 msgid "`u' modifier ignored since `D' is the default (see `U')"
-msgstr ""
+msgstr "「D」為預設值時，會忽略「u」修飾符 (參閱「U」)"
 
 #: ar.c:796
 msgid "missing position arg."
-msgstr ""
+msgstr "缺少位置參數"
 
 #: ar.c:802
 msgid "`N' is only meaningful with the `x' and `d' options."
@@ -411,7 +409,7 @@ msgstr "「N」只在使用「x」和「d」選項的時候才有意義。"
 
 #: ar.c:804
 msgid "`N' missing value."
-msgstr ""
+msgstr "「N」缺少數值。"
 
 #: ar.c:807
 msgid "Value for `N' must be positive."
@@ -419,12 +417,12 @@ msgstr "「N」的值必須是正數。"
 
 #: ar.c:823
 msgid "`x' cannot be used on thin archives."
-msgstr ""
+msgstr "「x」不能在輕型 (thin) 封存使用。"
 
 #: ar.c:870
 #, c-format
 msgid "internal error -- this option not implemented"
-msgstr "內部錯誤 -- 該選項尚未實現"
+msgstr "內部錯誤 -- 該選項尚未實作"
 
 #: ar.c:939
 #, c-format
@@ -434,17 +432,17 @@ msgstr "正在建立 %s"
 #: ar.c:970
 #, c-format
 msgid "Cannot convert existing library %s to thin format"
-msgstr ""
+msgstr "無法轉換現存函式庫 %s 至輕型 (thin) 格式"
 
 #: ar.c:976
 #, c-format
 msgid "Cannot convert existing thin library %s to normal format"
-msgstr ""
+msgstr "無法轉換現存輕型 (thin) 函式庫 %s 至一般格式"
 
 #: ar.c:1008 ar.c:1072 ar.c:1402 objcopy.c:3357
 #, c-format
 msgid "internal stat error on %s"
-msgstr "在 %s 內部狀態錯誤"
+msgstr "在 %s 有內部統計錯誤"
 
 #: ar.c:1027 ar.c:1105
 #, c-format
@@ -454,12 +452,11 @@ msgstr "%s 不是有效的封存"
 #: ar.c:1064 objcopy.c:3319
 #, c-format
 msgid "illegal pathname found in archive member: %s"
-msgstr ""
+msgstr "在封存檔成員中找到無效路徑名稱：%s"
 
 #: ar.c:1163
-#, fuzzy
 msgid "could not create temporary file whilst writing archive"
-msgstr "無法建立暫存檔正當寫入封存"
+msgstr "無法在寫入封存時建立暫存檔"
 
 #: ar.c:1307
 #, c-format
