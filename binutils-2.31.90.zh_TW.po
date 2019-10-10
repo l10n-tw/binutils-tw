@@ -171,7 +171,7 @@ msgstr "  q[f]         - 將檔案快速追加到封存中\n"
 #, c-format
 msgid ""
 "  r[ab][f][u]  - replace existing or insert new file(s) into the archive\n"
-msgstr "  r[ab][f][u]  - 替換封存中已有的檔案或加入新檔案\n"
+msgstr "  r[ab][f][u]  - 取代封存中已有的檔案或加入新檔案\n"
 
 #: ar.c:295
 #, c-format
@@ -256,7 +256,7 @@ msgstr "  t            - 顯示封存中的檔案位移\n"
 msgid ""
 "  [u]          - only replace files that are newer than current archive"
 " contents\n"
-msgstr "  [u]          - 只替換比目前封存內容更新的檔案\n"
+msgstr "  [u]          - 只取代比目前封存內容更新的檔案\n"
 
 #: ar.c:321
 #, c-format
