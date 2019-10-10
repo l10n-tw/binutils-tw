@@ -4968,7 +4968,7 @@ msgstr ""
 "  -I --input-target <bfdname>      假設輸入檔案是在中格式 <bfdname>\n"
 "  -O --output-target <bfdname>     建立輸出檔案在中格式 <bfdname>\n"
 "  -B --binary-architecture <arch><bfdname>            設定兩者輸入與輸出格式到 <bfdname>\n"
-"     --debugging                   轉換偵錯資訊，儘量\n"
+"     --debugging                   轉換除錯資訊，儘量\n"
 "  -p --preserve-dates              複製已修改/存取時間戳記到輸出\n"
 "  -j --only-section <name>         只有複製區段 <name> 進入輸出\n"
 "     --add-gnu-debuglink=<file>    加入區段.gnudebuglink 鏈結到 (_D)<file>\n"
@@ -5338,7 +5338,7 @@ msgstr "沒有傾印區段 %d 是因為它們並不存在！\n"
 #: objcopy.c:2841
 #, fuzzy
 msgid "can't dump section - it has no contents"
-msgstr "無法設定偵錯區段內容"
+msgstr "無法設定除錯區段內容"
 
 #: objcopy.c:2849
 msgid "can't dump section - it is empty"
@@ -5357,7 +5357,7 @@ msgstr ""
 #: objcopy.c:2877
 #, fuzzy
 msgid "could not retrieve section contents"
-msgstr "無法設定偵錯區段內容"
+msgstr "無法設定除錯區段內容"
 
 #: objcopy.c:2891
 #, c-format
@@ -5481,12 +5481,12 @@ msgstr ""
 #: objcopy.c:4345
 #, fuzzy
 msgid "can't create debugging section"
-msgstr "無法建立偵錯區段"
+msgstr "無法建立除錯區段"
 
 #: objcopy.c:4359
 #, fuzzy
 msgid "can't set debugging section contents"
-msgstr "無法設定偵錯區段內容"
+msgstr "無法設定除錯區段內容"
 
 #: objcopy.c:4368
 #, c-format
@@ -5704,8 +5704,8 @@ msgstr ""
 "      --disassemble=<sym>  顯示來自 <sym> 的組譯器內容\n"
 "  -S, --source             使用反組譯混合原始碼\n"
 "  -s, --full-contents      顯示請求之所有區段的完整內容\n"
-"  -g, --debugging          顯示目的檔的偵錯資訊\n"
-"  -e, --debugging-tags     使用 ctags 樣式顯示偵錯資訊\n"
+"  -g, --debugging          顯示目的檔的除錯資訊\n"
+"  -e, --debugging-tags     使用 ctags 樣式顯示除錯資訊\n"
 "  -G, --stabs              (使用原始格式) 顯示檔案中的任何 STABS 資訊\n"
 "  -W[lLiaprmfFsoRtUuTgAckK] 或\n"
 "  --dwarf[=rawline,=decodedline,=info,=abbrev,=pubnames,=aranges,=macro,=frame"
@@ -5927,7 +5927,7 @@ msgstr ""
 #, c-format
 #| msgid "%s: no recognized debugging information"
 msgid "File %s does not contain any dwarf debug information\n"
-msgstr "%s 檔案未包含任何 dwarf 偵錯資訊\n"
+msgstr "%s 檔案未包含任何 dwarf 除錯資訊\n"
 
 #: objdump.c:2971
 #, c-format
