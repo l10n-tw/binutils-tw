@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: binutils 2.23.2\n"
 "Report-Msgid-Bugs-To: bug-binutils@gnu.org\n"
 "POT-Creation-Date: 2019-01-19 16:32+0000\n"
-"PO-Revision-Date: 2019-10-10 21:53+0800\n"
+"PO-Revision-Date: 2019-10-11 00:36+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -5645,13 +5645,17 @@ msgstr "用法：%s <選項> <檔案>\n"
 #: objdump.c:205
 #, c-format
 msgid " Display information from object <file(s)>.\n"
-msgstr " 顯示來自目標 <檔案> 的資訊。\n"
+msgstr " 顯示 <檔案> 物件的資訊。\n"
 
 #: objdump.c:206
 #, c-format
 msgid " At least one of the following switches must be given:\n"
-msgstr " 至少必須指定以下選項之一：\n"
+msgstr " 至少必須指定以下選項任一：\n"
 
+# fuzzy:
+#   -S, --source ...
+#   -p ...
+#   -P ...
 #: objdump.c:207
 #, fuzzy, c-format
 msgid ""
@@ -5688,10 +5692,36 @@ msgid ""
 "  -i, --info               List object formats and architectures supported\n"
 "  -H, --help               Display this information\n"
 msgstr ""
-"<file>                  讀取選項從 <file>\n"
-"  -v, --version            顯示這個程式版本編號\n"
-"  -i, --info               清單物件格式與架構支援\n"
-"  -H, --help               顯示這個資訊\n"
+"  -a, --archive-headers    顯示封存標頭資訊\n"
+"  -f, --file-headers       顯示整體檔案標頭的內容\n"
+"  -p, --private-headers    Display object format specific file header"
+" contents\n"
+"  -P, --private=OPT,OPT... Display object format specific contents\n"
+"  -h, --[section-]headers  顯示區段標頭的內容\n"
+"  -x, --all-headers        顯示全部標頭的內容\n"
+"  -d, --disassemble        顯示可執行區段的組譯器內容\n"
+"  -D, --disassemble-all    顯示所有區段的組譯器內容\n"
+"      --disassemble=<sym>  顯示來自 <sym> 的組譯器內容\n"
+"  -S, --source             使用反組譯混合原始碼\n"
+"  -s, --full-contents      顯示請求之所有區段的完整內容\n"
+"  -g, --debugging          顯示目的檔的偵錯資訊\n"
+"  -e, --debugging-tags     使用 ctags 樣式顯示偵錯資訊\n"
+"  -G, --stabs              (使用原始格式) 顯示檔案中的任何 STABS 資訊\n"
+"  -W[lLiaprmfFsoRtUuTgAckK] 或\n"
+"  --dwarf[=rawline,=decodedline,=info,=abbrev,=pubnames,=aranges,=macro,=frame"
+"s,\n"
+"          =frames-interp,=str,=loc,=Ranges,=pubtypes,\n"
+"          =gdb_index,=trace_info,=trace_abbrev,=trace_aranges,\n"
+"          =addr,=cu_index,=links,=follow-links]\n"
+"                           顯示檔案中的 DWAFRF 資訊\n"
+"  -t, --syms               顯示符號表格的內容\n"
+"  -T, --dynamic-syms       顯示動態符號表格的內容\n"
+"  -r, --reloc              顯示檔案中的重新配置條目\n"
+"  -R, --dynamic-reloc      顯示檔案中的動態重新配置條目\n"
+"  @<file>                  讀取 <檔案> 中的選項\n"
+"  -v, --version            顯示此程式的版本號碼\n"
+"  -i, --info               列出支援的目的格式及架構\n"
+"  -H, --help               顯示此資訊\n"
 
 #: objdump.c:241
 #, c-format
@@ -5745,6 +5775,35 @@ msgid ""
 "      --prefix=PREFIX            Add PREFIX to absolute paths for -S\n"
 "      --prefix-strip=LEVEL       Strip initial directory names for -S\n"
 msgstr ""
+"  -b, --target=BFDNAME           將目標目的格式指定成 BFDNAME\n"
+"  -m, --architecture=MACHINE     將目標架構指定成 MACHINE\n"
+"  -j, --section=NAME             僅顯示 NAME 區段的資訊\n"
+"  -M, --disassembler-options=OPT 將 OPT 文字傳遞至反組譯器\n"
+"  -EB --endian=big               反組譯時假設是大端序格式\n"
+"  -EL --endian=little            反組譯時假設是小端序格式\n"
+"      --file-start-context       包含檔案開頭的內文 (與 -S 一起使用)\n"
+"  -I, --include=目錄             將 <目錄> 加進來源檔案的搜尋列表\n"
+"  -l, --line-numbers             在輸出增加行號及檔名\n"
+"  -F, --file-offsets             顯示資訊時增加檔案位移\n"
+"  -C, --demangle[=樣式]          解碼損壞/處理過的符號名稱\n"
+"                                  如果指定 <樣式>，則可為 `auto', `gnu',\n"
+"                                  `lucid', `arm', `hp', `edg', `gnu-v3',"
+" `java'\n"
+"                                  或 `gnat'\n"
+"      --recurse-limit            啟用修復損壞名稱時的遞迴限制。[預設值]\n"
+"      --no-recurse-limit         停用修復損壞名稱時的遞迴限制。\n"
+"  -w, --wide                     格式化超過 80 個字的輸出\n"
+"  -z, --disassemble-zeroes       反組譯時不跳過為 0 的區塊\n"
+"      --start-address=ADDR       只處理位址 >= ADDR 的資料\n"
+"      --stop-address=ADDR        只處理位址 <= ADDR 的資料> <!!!>\n"
+"      --prefix-addresses         輸出與反組譯並存的完整位址\n"
+"      --[no-]show-raw-insn       輸出與符號反組譯並存的十六進位碼\n"
+"      --insn-width=寬度          對 -d 輸出的每一行顯示 <寬度> 長位元組\n"
+"      --adjust-vma=位移          對所有顯示的選擇區域位址新增 <位移>\n"
+"      --special-syms             包含符號傾印中的特殊符號\n"
+"      --inlines                  輸出來源行的所有內嵌 (inline) 項目。(與 -l 一起使用)\n"
+"      --prefix=前綴              對 -S 增加 <前綴> 至絕對路徑\n"
+"      --prefix-strip=階層        除去 -S 的開始目錄名稱\n"
 
 #: objdump.c:271
 #, c-format
@@ -5756,20 +5815,24 @@ msgid ""
 " checks.      \n"
 "\n"
 msgstr ""
+"      --dwarf-depth=N        不顯示 N 或更深層的 DIE\n"
+"      --dwarf-start=N        顯示從 N 開始及更深層的 DIE\n"
+"      --dwarf-check          讓額外 dwaf 進行內部一致性檢查。      \n"
+"\n"
 
 #: objdump.c:285
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Options supported for -P/--private switch:\n"
 msgstr ""
 "\n"
-"選項支援的用於 -P/--private 切換：\n"
+"支援用於 -P/--private 選項的選項：\n"
 
 #: objdump.c:508
 #, c-format
 msgid "section '%s' mentioned in a -j option, but not found in any input file"
-msgstr ""
+msgstr "「%s」區段有在 -j 選項指定，但未在任何輸入檔找到。"
 
 #: objdump.c:659
 #, c-format
@@ -5787,13 +5850,13 @@ msgid "  Flags"
 msgstr "  旗標"
 
 #: objdump.c:693
-#, fuzzy, c-format
+#, c-format
 msgid "failed to read symbol table from: %s"
-msgstr "無法讀取符號表格"
+msgstr "無法從下述來源讀取符號表格：%s"
 
 #: objdump.c:694 objdump.c:3675
 msgid "error message was"
-msgstr ""
+msgstr "錯誤訊息是"
 
 #: objdump.c:718
 #, c-format
@@ -5803,22 +5866,22 @@ msgstr "%s：不是動態物件"
 #: objdump.c:1265 objdump.c:1289
 #, c-format
 msgid " (File Offset: 0x%lx)"
-msgstr ""
+msgstr " (檔案位移：0x%lx)"
 
 #: objdump.c:1531
 #, c-format
 msgid "source file %s is more recent than object file\n"
-msgstr ""
+msgstr "%s 來源檔比目的檔更年輕\n"
 
 #: objdump.c:1987
 #, c-format
 msgid "disassemble_fn returned length %d"
-msgstr ""
+msgstr "disassemble_fn 回傳長度 %d"
 
 #: objdump.c:2300 objdump.c:3294
-#, fuzzy, c-format
+#, c-format
 msgid "Reading section %s failed because: %s"
-msgstr "讀取區段失敗"
+msgstr "讀取區段 %s 失敗，原因：%s"
 
 #: objdump.c:2317
 #, c-format
@@ -5826,19 +5889,21 @@ msgid ""
 "\n"
 "Disassembly of section %s:\n"
 msgstr ""
+"\n"
+"%s 區段的反組譯：\n"
 
 #: objdump.c:2575
 #, c-format
 msgid "can't use supplied machine %s"
-msgstr ""
+msgstr "無法使用提供的機器 %s"
 
 #: objdump.c:2596
 #, c-format
 msgid "can't disassemble for architecture %s\n"
-msgstr ""
+msgstr "無法反組譯 %s 架構\n"
 
 #: objdump.c:2682
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "\n"
 #| "Section '%s' has no data to dump.\n"
@@ -5847,7 +5912,7 @@ msgid ""
 "Section '%s' has an invalid size: %#llx.\n"
 msgstr ""
 "\n"
-"「%s」區段沒有可傾印的資料。\n"
+"「%s」區段有無效大小：%#llx。\n"
 
 #: objdump.c:2692 objdump.c:2714
 #, c-format
@@ -5855,12 +5920,14 @@ msgid ""
 "\n"
 "Can't get contents for section '%s'.\n"
 msgstr ""
+"\n"
+"無法取得「%s」區段的內容。\n"
 
 #: objdump.c:2898
-#, fuzzy, c-format
+#, c-format
 #| msgid "%s: no recognized debugging information"
 msgid "File %s does not contain any dwarf debug information\n"
-msgstr "%s：未識別的除錯資訊"
+msgstr "%s 檔案未包含任何 dwarf 偵錯資訊\n"
 
 #: objdump.c:2971
 #, c-format
@@ -5868,13 +5935,13 @@ msgid ""
 "No %s section present\n"
 "\n"
 msgstr ""
-"%s 區段不存在\n"
+"未提供 %s 區段\n"
 "\n"
 
 #: objdump.c:2978
 #, c-format
 msgid "reading %s section of %s failed: %s"
-msgstr ""
+msgstr "讀取 %2$s 的 %1$s 區段失敗：%s"
 
 #: objdump.c:3022
 #, c-format
@@ -5902,32 +5969,31 @@ msgid ""
 "start address 0x"
 msgstr ""
 "\n"
-"起始位址 0x"
+"開始位址 0x"
 
 #: objdump.c:3198
-#, fuzzy
 msgid "option -P/--private not supported by this file"
-msgstr "選項 -P/--private 不支援由這個檔案"
+msgstr "此檔案不支援 -P/--private 選項"
 
 #: objdump.c:3222
 #, c-format
 msgid "target specific dump '%s' not supported"
-msgstr ""
+msgstr "不支援「%s」目標特定傾印"
 
 #: objdump.c:3286
 #, c-format
 msgid "Contents of section %s:"
-msgstr ""
+msgstr "%s 區段的內容："
 
 #: objdump.c:3288
 #, c-format
 msgid "  (Starting at file offset: 0x%lx)"
-msgstr ""
+msgstr "  (在下述檔案位移開始：0x%lx）"
 
 #: objdump.c:3398
 #, c-format
 msgid "no symbols\n"
-msgstr "無符號\n"
+msgstr "沒有符號\n"
 
 #: objdump.c:3405
 #, c-format
@@ -5940,10 +6006,10 @@ msgid "could not determine the type of symbol number %ld\n"
 msgstr "無法確定符號號碼「%ld」的類型\n"
 
 #: objdump.c:3674
-#, fuzzy, c-format
+#, c-format
 #| msgid "Failed to read in number of chains\n"
 msgid "failed to read relocs in: %s"
-msgstr "讀入鏈結數量失敗\n"
+msgstr "無法在下述位置讀取 relocs：%s"
 
 #: objdump.c:3774
 #, c-format
@@ -5952,7 +6018,7 @@ msgid ""
 "%s:     file format %s\n"
 msgstr ""
 "\n"
-"%s：     檔案格式 %s\n"
+"%s      檔案格式 %s\n"
 
 #: objdump.c:3837
 #, c-format
@@ -5968,42 +6034,38 @@ msgstr "在封存 %s 中：\n"
 #. infinite loop.  100 is an arbitrary heuristic.
 #: objdump.c:3935
 msgid "Archive nesting is too deep"
-msgstr ""
+msgstr "封存層次過深"
 
 #: objdump.c:3939
-#, fuzzy, c-format
+#, c-format
 #| msgid "In archive %s:\n"
 msgid "In nested archive %s:\n"
-msgstr "在封存 %s 中：\n"
+msgstr "在 %s 分層封存中：\n"
 
 #: objdump.c:4104
-#, fuzzy
 msgid "error: the start address should be before the end address"
-msgstr "錯誤：起始位址應該是之前結束位址"
+msgstr "錯誤：開始位址應該先於結束位址"
 
 #: objdump.c:4109
-#, fuzzy
 msgid "error: the stop address should be after the start address"
-msgstr "錯誤：停止位址應該是之後起始位址"
+msgstr "錯誤：停止位址應該晚於開始位址"
 
 #: objdump.c:4121
-#, fuzzy
 msgid "error: prefix strip must be non-negative"
-msgstr "錯誤：前綴截除必須是 non-negative"
+msgstr "錯誤：前綴截斷絕不能是負數"
 
 #: objdump.c:4126
-#, fuzzy
 msgid "error: instruction width must be positive"
-msgstr "錯誤：指令寬度必須是正值"
+msgstr "錯誤：指令寬度必須是正數"
 
 #: objdump.c:4138
 msgid "unrecognized -E option"
-msgstr "無法識別的 -E 選項"
+msgstr "無法識別 -E 選項"
 
 #: objdump.c:4149
 #, c-format
 msgid "unrecognized --endian type `%s'"
-msgstr "無法識別的 --endian 類型「%s」"
+msgstr "無法識別 --endian 類型「%s」"
 
 #: od-macho.c:73
 #, c-format
