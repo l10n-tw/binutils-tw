@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: binutils 2.23.2\n"
 "Report-Msgid-Bugs-To: bug-binutils@gnu.org\n"
 "POT-Creation-Date: 2019-01-19 16:32+0000\n"
-"PO-Revision-Date: 2019-10-11 00:36+0800\n"
+"PO-Revision-Date: 2019-10-11 01:19+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -4592,7 +4592,7 @@ msgstr "用法：%s [選項] [檔案]\n"
 #: nm.c:249
 #, c-format
 msgid " List symbols in [file(s)] (a.out by default).\n"
-msgstr "列舉 [檔案] 中的符號 (預設為 a.out)。\n"
+msgstr " 列舉 [檔案] 中的符號 (預設為 a.out)。\n"
 
 #: nm.c:250
 #, c-format
@@ -4625,9 +4625,33 @@ msgid ""
 "  -P, --portability      Same as --format=posix\n"
 "  -r, --reverse-sort     Reverse the sense of the sort\n"
 msgstr ""
+" 選項有：\n"
+"  -a, --debug-syms       顯示僅除錯器的符號\n"
+"  -A, --print-file-name  在每個符號前輸出輸入檔的名稱\n"
+"  -B                     等於 --format=bsd\n"
+"  -C, --demangle[=樣式]  解碼低階符號名稱成使用者階級的名稱\n"
+"                          若有指定 <樣式>，則可為 `auto' (預設值),\n"
+"                          `gnu', `lucid', `arm', `hp', `edg', `gnu-v3',"
+" `java'\n"
+"                          或 `gnat'\n"
+"      --no-demangle      不要修復損壞的低階符號名稱\n"
+"      --recurse-limit    啟用修復損壞名稱的遞迴限制。這是預設值。\n"
+"      --no-recurse-limit 停用修復損壞名稱的遞迴限制。\n"
+"  -D, --dynamic          顯示動態符號而非一般符號\n"
+"      --defined-only     只顯示定義的符號\n"
+"  -e                     (忽略)\n"
+"  -f, --format=格式      使用哪個輸出格式。<格式> 可為 `bsd',\n"
+"                           `sysv' 或 `posix'。預設值是 `bsd'\n"
+"  -g, --extern-only      只顯示外部符號\n"
+"  -l, --line-numbers     使用除錯資訊尋找檔名及每個符號的行號\n"
+"  -n, --numeric-sort     依位址來數字排序符號\n"
+"  -o                     等於 -A\n"
+"  -p, --no-sort          不排序符號\n"
+"  -P, --portability      等於 --format=posix\n"
+"  -r, --reverse-sort     反轉排序結果\n"
 
 #: nm.c:275
-#, fuzzy, c-format
+#, c-format
 msgid "      --plugin NAME      Load the specified plugin\n"
 msgstr "      --plugin 名稱      載入指定的外掛程式\n"
 
@@ -4649,6 +4673,20 @@ msgid ""
 "  -V, --version          Display this program's version number\n"
 "\n"
 msgstr ""
+"  -S, --print-size       輸出定義符號的大小\n"
+"  -s, --print-armap      對封存成員的符號加上索引\n"
+"      --size-sort        依大小排序符號\n"
+"      --special-syms     對輸出加上特殊符號\n"
+"      --synthetic        亦顯示合成符號\n"
+"  -t, --radix=基數       將 <基數> 用於輸出符號數值\n"
+"      --target=BFDNAME   將目標目的格式指定成 BFDNAME\n"
+"  -u, --undefined-only   只顯示未定義的符號\n"
+"      --with-symbol-versions  在符號名稱後顯示版本字串\n"
+"  -X 32_64               (忽略)\n"
+"  @檔案                  讀取檔案的選項\n"
+"  -h, --help             顯示此資訊\n"
+"  -V, --version          顯示此程式的版本號碼\n"
+"\n"
 
 #: nm.c:327
 #, c-format
@@ -4676,10 +4714,10 @@ msgid "<unknown>: %d"
 msgstr "<未知>：%d"
 
 #: nm.c:409
-#, fuzzy, c-format
+#, c-format
 #| msgid "<unknown>: %d"
 msgid "<unknown>: %d/%d"
-msgstr "<未知>：%d"
+msgstr "<未知>：%d/%d"
 
 #: nm.c:450
 #, c-format
@@ -4693,7 +4731,7 @@ msgstr ""
 #: nm.c:497
 #, c-format
 msgid "%s: plugin needed to handle lto object"
-msgstr ""
+msgstr "%s：需要用於處理 lto 目的檔的外掛程式"
 
 #: nm.c:1376
 #, c-format
@@ -4728,7 +4766,7 @@ msgid ""
 " Section\n"
 "\n"
 msgstr ""
-"名稱                  值      類別         型態         大小     列號  區段\n"
+"名稱                  值      類別         型態         大小     行號  區段\n"
 "\n"
 
 #: nm.c:1383 nm.c:1434
@@ -4738,7 +4776,7 @@ msgid ""
 "    Line  Section\n"
 "\n"
 msgstr ""
-"名稱                  值              類別         型態         大小             列號 "
+"名稱                  值              類別         型態         大小             行號 "
 " 區段\n"
 "\n"
 
@@ -4752,7 +4790,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"來自 %s[%s] 的未定義的符號：\n"
+"來自 %s[%s] 的未定義符號：\n"
 "\n"
 
 #: nm.c:1429
@@ -4771,7 +4809,7 @@ msgstr ""
 #: nm.c:1521
 #, c-format
 msgid "Print width has not been initialized (%d)"
-msgstr ""
+msgstr "未初始化輸出寬度 (%d)"
 
 #: nm.c:1770
 msgid "Only -X 32_64 is supported"
@@ -4783,7 +4821,7 @@ msgstr "同時使用 --size-sort 與 --undefined-only 選項"
 
 #: nm.c:1799
 msgid "will produce no output, since undefined symbols have no size."
-msgstr "由於未定義的符號不具大小，將不會產生輸出"
+msgstr "由於未定義的符號不具大小，因此不會產生輸出"
 
 #: objcopy.c:537 srconv.c:1695
 #, c-format
