@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: binutils 2.23.2\n"
 "Report-Msgid-Bugs-To: bug-binutils@gnu.org\n"
 "POT-Creation-Date: 2019-01-19 16:32+0000\n"
-"PO-Revision-Date: 2019-10-10 21:51+0800\n"
+"PO-Revision-Date: 2019-10-10 21:52+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -376,7 +376,7 @@ msgstr ""
 
 #: ar.c:493
 msgid "two different operation options specified"
-msgstr "指定了兩個不同的操作選項"
+msgstr "指定了兩個不同的動作選項"
 
 #: ar.c:587 ar.c:647 nm.c:1781
 #, c-format
@@ -1843,12 +1843,12 @@ msgstr[0] ""
 #, fuzzy
 #| msgid "badly formed extended line op encountered!\n"
 msgid "Badly formed extended line op encountered!\n"
-msgstr "遇到不正常的擴充型列操作碼！\n"
+msgstr "遇到不正常的擴充型列動作碼！\n"
 
 #: dwarf.c:532
 #, c-format
 msgid "  Extended opcode %d: "
-msgstr "  擴充操作碼 %d： "
+msgstr "  擴充動作碼 %d： "
 
 #: dwarf.c:537
 #, c-format
@@ -2073,13 +2073,13 @@ msgstr ""
 #, fuzzy, c-format
 #| msgid "(User defined location op)"
 msgid "(User defined location op 0x%x)"
-msgstr "(使用者定義的定位操作碼)"
+msgstr "(使用者定義的定位動作碼)"
 
 #: dwarf.c:1638
 #, fuzzy, c-format
 #| msgid "(Unknown location op)"
 msgid "(Unknown location op 0x%x)"
-msgstr "(未知的定位操作碼)"
+msgstr "(未知的定位動作碼)"
 
 #: dwarf.c:1721
 msgid "<following link not possible>"
@@ -2711,7 +2711,7 @@ msgstr "  最小指令長度：              %d\n"
 #: dwarf.c:3633
 #, c-format
 msgid "  Maximum Ops per Instruction: %d\n"
-msgstr "  指令中最多操作碼：              %d\n"
+msgstr "  指令中最多動作碼：              %d\n"
 
 #: dwarf.c:3634
 #, c-format
@@ -2731,7 +2731,7 @@ msgstr "  列範圍：                      %d\n"
 #: dwarf.c:3637
 #, c-format
 msgid "  Opcode Base:                 %d\n"
-msgstr "  操作碼基數：                %d\n"
+msgstr "  動作碼基數：                %d\n"
 
 #: dwarf.c:3642 dwarf.c:4046
 msgid "Line range of 0 is invalid, using 1 instead\n"
@@ -2748,14 +2748,14 @@ msgid ""
 " Opcodes:\n"
 msgstr ""
 "\n"
-" 操作碼:\n"
+" 動作碼:\n"
 
 #: dwarf.c:3661
 #, fuzzy, c-format
 #| msgid "  Opcode %d has %d args\n"
 msgid "  Opcode %d has %d arg\n"
 msgid_plural "  Opcode %d has %d args\n"
-msgstr[0] "  操作碼 %d 具有 %d 個引數\n"
+msgstr[0] "  動作碼 %d 具有 %d 個引數\n"
 
 #: dwarf.c:3735
 #, fuzzy
@@ -2882,7 +2882,7 @@ msgstr ""
 #: dwarf.c:3965 dwarf.c:4617
 #, c-format
 msgid "  Unknown opcode %d with operands: "
-msgstr "  未知操作碼 %d 應用於運算子："
+msgstr "  未知動作碼 %d 應用於運算子："
 
 #: dwarf.c:4059
 #, c-format
@@ -6174,7 +6174,7 @@ msgstr ""
 #, fuzzy, c-format
 #| msgid "  Opcode Base:                 %d\n"
 msgid "  code limit:        %08x\n"
-msgstr "  操作碼基數：                %d\n"
+msgstr "  動作碼基數：                %d\n"
 
 #: od-macho.c:1197
 #, fuzzy, c-format
@@ -6192,7 +6192,7 @@ msgstr "   長度：        0x%s (%s)\n"
 #, fuzzy, c-format
 #| msgid "  Opcode Base:                 %d\n"
 msgid "  spare1:            %02x\n"
-msgstr "  操作碼基數：                %d\n"
+msgstr "  動作碼基數：                %d\n"
 
 #: od-macho.c:1202
 #, fuzzy, c-format
@@ -6204,7 +6204,7 @@ msgstr "  節區大小:             %d\n"
 #, fuzzy, c-format
 #| msgid "  Opcode Base:                 %d\n"
 msgid "  spare2:            %08x\n"
-msgstr "  操作碼基數：                %d\n"
+msgstr "  動作碼基數：                %d\n"
 
 #: od-macho.c:1205
 #, fuzzy, c-format
@@ -11362,7 +11362,7 @@ msgstr "%s：讀取 %lu 返回 %lu"
 #: resrc.c:722 resrc.c:1497
 #, c-format
 msgid "stat failed on bitmap file `%s': %s"
-msgstr "對位元圖檔案「%s」進行 stat 操作失敗：%s"
+msgstr "對位元圖檔案「%s」進行 stat 動作失敗：%s"
 
 #: resrc.c:773
 #, c-format
@@ -11372,7 +11372,7 @@ msgstr "游標檔案「%s」不含有游標資料"
 #: resrc.c:805 resrc.c:1205
 #, c-format
 msgid "%s: fseek to %lu failed: %s"
-msgstr "%s: fseek 到 %lu 操作失敗: %s"
+msgstr "%s: fseek 到 %lu 動作失敗: %s"
 
 #: resrc.c:931
 msgid "help ID requires DIALOGEX"
@@ -11385,7 +11385,7 @@ msgstr "控制資料要求 DIALOGEX"
 #: resrc.c:961
 #, c-format
 msgid "stat failed on font file `%s': %s"
-msgstr "對字型檔案「%s」進行 stat 操作失敗：%s"
+msgstr "對字型檔案「%s」進行 stat 動作失敗：%s"
 
 #: resrc.c:1174
 #, c-format
@@ -11395,7 +11395,7 @@ msgstr "圖示檔案「%s」不含有圖示資料"
 #: resrc.c:1723 resrc.c:1758
 #, c-format
 msgid "stat failed on file `%s': %s"
-msgstr "對檔案「%s」進行 stat 操作失敗：%s"
+msgstr "對檔案「%s」進行 stat 動作失敗：%s"
 
 #: resrc.c:1957
 #, c-format
