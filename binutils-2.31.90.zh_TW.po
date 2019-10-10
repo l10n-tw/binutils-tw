@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: binutils 2.23.2\n"
 "Report-Msgid-Bugs-To: bug-binutils@gnu.org\n"
 "POT-Creation-Date: 2019-01-19 16:32+0000\n"
-"PO-Revision-Date: 2019-10-10 21:52+0800\n"
+"PO-Revision-Date: 2019-10-10 21:53+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -542,7 +542,7 @@ msgstr " 模擬選項：\n"
 #: bucomm.c:156
 #, c-format
 msgid "can't set BFD default target to `%s': %s"
-msgstr "無法將 BFD 預設的目標設置成「%s」：%s"
+msgstr "無法將 BFD 預設的目標設定成「%s」：%s"
 
 #: bucomm.c:168
 #, c-format
@@ -10984,7 +10984,7 @@ msgstr "無事可做。\n"
 #: rename.c:122
 #, c-format
 msgid "%s: cannot set time: %s"
-msgstr "%s：無法設置時間：%s"
+msgstr "%s：無法設定時間：%s"
 
 #. We have to clean up here.
 #: rename.c:157 rename.c:195
