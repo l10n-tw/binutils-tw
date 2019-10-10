@@ -1,4 +1,8 @@
 # binutils-tw
+## status
+- the last time I uploaded to upstream: 2019/10/11 2:02:30 +0800
+- commit: `ad2f9393ff8659513b2d0aad5fac4406cdf6c945`
+
 ## contribute
 1. fork this repo
 2. clone it
