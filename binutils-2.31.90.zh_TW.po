@@ -21,6 +21,15 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 19.08.1\n"
 
+#: lib/argp-help.c:1688 cxxfilt.c:124 nm.c:295 objdump.c:291
+#, c-format
+msgid "Report bugs to %s.\n"
+msgstr "請向 %s 匯報錯誤。\n"
+
+#: lib/file-type.c:43 rescoff.c:202
+msgid "directory"
+msgstr "目錄"
+
 #: addr2line.c:87
 #, c-format
 msgid "Usage: %s [option(s)] [addr(s)]\n"
@@ -34,8 +43,8 @@ msgstr " 將位址轉換成檔案名/列號對。\n"
 #: addr2line.c:89
 #, c-format
 msgid ""
-" If no addresses are specified on the command line, they will be read from"
-" stdin\n"
+" If no addresses are specified on the command line, they will be read from "
+"stdin\n"
 msgstr " 如果沒有在指令列中指定位址，就從標準輸入中讀取它們\n"
 
 #: addr2line.c:90
@@ -52,8 +61,8 @@ msgid ""
 "  -s --basenames         Strip directory names\n"
 "  -f --functions         Show function names\n"
 "  -C --demangle[=style]  Demangle function names\n"
-"  -R --recurse-limit     Enable a limit on recursion whilst demangling. "
-" [Default]\n"
+"  -R --recurse-limit     Enable a limit on recursion whilst demangling.  "
+"[Default]\n"
 "  -r --no-recurse-limit  Disable a limit on recursion whilst demangling\n"
 "  -h --help              Display this information\n"
 "  -v --version           Display the program's version\n"
@@ -121,21 +130,27 @@ msgstr "封存檔中沒有條目 %s\n"
 
 #: ar.c:274
 #, c-format
-#| msgid "Usage: %s [emulation options] [-]{dmpqrstx}[abcDfilMNoPsSTuvV] [--plugin <name>] [member-name] [count] archive-file file...\n"
+#| msgid ""
+#| "Usage: %s [emulation options] [-]{dmpqrstx}[abcDfilMNoPsSTuvV] [--plugin "
+#| "<name>] [member-name] [count] archive-file file...\n"
 msgid ""
-"Usage: %s [emulation options] [-]{dmpqrstx}[abcDfilMNoOPsSTuvV] [--plugin <"
-"name>] [member-name] [count] archive-file file...\n"
+"Usage: %s [emulation options] [-]{dmpqrstx}[abcDfilMNoOPsSTuvV] [--plugin "
+"<name>] [member-name] [count] archive-file file...\n"
 msgstr ""
-"用法：%s [模擬選項] [-]{dmpqrstx}[abcDfilMNoOPsSTuvV] [--plugin <名稱>] [成員名稱] [計數] 封存"
-" 檔案…\n"
+"用法：%s [模擬選項] [-]{dmpqrstx}[abcDfilMNoOPsSTuvV] [--plugin <名稱>] [成員"
+"名稱] [計數] 封存 檔案…\n"
 
 #: ar.c:280
 #, c-format
-#| msgid "Usage: %s [emulation options] [-]{dmpqrstx}[abcDfilMNoPsSTuvV] [member-name] [count] archive-file file...\n"
+#| msgid ""
+#| "Usage: %s [emulation options] [-]{dmpqrstx}[abcDfilMNoPsSTuvV] [member-"
+#| "name] [count] archive-file file...\n"
 msgid ""
-"Usage: %s [emulation options] [-]{dmpqrstx}[abcDfilMNoOPsSTuvV] [member-name]"
-" [count] archive-file file...\n"
-msgstr "用法：%s [模擬選項] [-]{dmpqrstx}[abcDfilMNoOPsSTuvV] [成員名稱] [計數] 封存 檔案…\n"
+"Usage: %s [emulation options] [-]{dmpqrstx}[abcDfilMNoOPsSTuvV] [member-"
+"name] [count] archive-file file...\n"
+msgstr ""
+"用法：%s [模擬選項] [-]{dmpqrstx}[abcDfilMNoOPsSTuvV] [成員名稱] [計數] 封存 "
+"檔案…\n"
 
 #: ar.c:288
 #, c-format
@@ -254,8 +269,8 @@ msgstr "  t            - 顯示封存中的檔案位移\n"
 #: ar.c:320
 #, c-format
 msgid ""
-"  [u]          - only replace files that are newer than current archive"
-" contents\n"
+"  [u]          - only replace files that are newer than current archive "
+"contents\n"
 msgstr "  [u]          - 只取代比目前封存內容更新的檔案\n"
 
 #: ar.c:321
@@ -971,11 +986,6 @@ msgstr ""
 msgid "%s: is not a COFF format file"
 msgstr "「%s」不是一般的檔案\n"
 
-#: cxxfilt.c:124 nm.c:295 objdump.c:291
-#, c-format
-msgid "Report bugs to %s.\n"
-msgstr "將程式錯誤報告到 %s。\n"
-
 #: debug.c:647
 msgid "debug_add_to_current_namespace: no current file"
 msgstr "debug_add_to_current_namespace：沒有目前檔案"
@@ -1312,9 +1322,11 @@ msgstr "   -m --machine <架構>    為 <架構> 建立 DLL。[預設：%s]\n"
 #: dlltool.c:3950
 #, c-format
 msgid ""
-"        possible <machine>: arm[_interwork], i386, mcore[-elf]{-le|-be}, ppc,"
-" thumb\n"
-msgstr "        可能的 <架構>：arm[_interwork]、i386、mcore[-elf]{-le|-be}、ppc、thumb\n"
+"        possible <machine>: arm[_interwork], i386, mcore[-elf]{-le|-be}, "
+"ppc, thumb\n"
+msgstr ""
+"        可能的 <架構>：arm[_interwork]、i386、mcore[-elf]{-le|-be}、ppc、"
+"thumb\n"
 
 #: dlltool.c:3951
 #, c-format
@@ -1390,36 +1402,36 @@ msgstr "   -c --no-idata5            不產生 idata$5 區段。\n"
 #: dlltool.c:3965
 #, c-format
 msgid ""
-"      --use-nul-prefixed-import-tables Use zero prefixed idata$4 and"
-" idata$5.\n"
+"      --use-nul-prefixed-import-tables Use zero prefixed idata$4 and idata"
+"$5.\n"
 msgstr ""
 
 #: dlltool.c:3966
 #, c-format
 msgid ""
-"   -U --add-underscore       Add underscores to all symbols in interface"
-" library.\n"
+"   -U --add-underscore       Add underscores to all symbols in interface "
+"library.\n"
 msgstr "   -U --add-underscore       於介面中所有符號添加底線。\n"
 
 #: dlltool.c:3967
 #, c-format
 msgid ""
-"      --add-stdcall-underscore Add underscores to stdcall symbols in"
-" interface library.\n"
+"      --add-stdcall-underscore Add underscores to stdcall symbols in "
+"interface library.\n"
 msgstr "   --add-stdcall-underscore       於介面中的 stdcall 符號添加底線。\n"
 
 #: dlltool.c:3968
 #, fuzzy, c-format
 msgid ""
-"      --no-leading-underscore All symbols shouldn't be prefixed by an"
-" underscore.\n"
+"      --no-leading-underscore All symbols shouldn't be prefixed by an "
+"underscore.\n"
 msgstr "      --no-leading-underscore 所有符號不應為前綴的由底線。\n"
 
 #: dlltool.c:3969
 #, fuzzy, c-format
 msgid ""
-"      --leading-underscore   All symbols should be prefixed by an"
-" underscore.\n"
+"      --leading-underscore   All symbols should be prefixed by an "
+"underscore.\n"
 msgstr "      --leading-underscore   所有符號應該被前綴由底線。\n"
 
 #: dlltool.c:3970
@@ -1456,8 +1468,8 @@ msgstr "   -C --compat-implib        建立向後相容的導入函式庫。\n"
 #: dlltool.c:3976
 #, c-format
 msgid ""
-"   -n --no-delete            Keep temp files (repeat for extra"
-" preservation).\n"
+"   -n --no-delete            Keep temp files (repeat for extra "
+"preservation).\n"
 msgstr "   -n --no-delete            保留臨時檔案 (重覆以達到額外的保留)。\n"
 
 #: dlltool.c:3977
@@ -1469,16 +1481,19 @@ msgstr "   -t --temp-prefix <前置>   使用 <前置> 來建構臨時檔案名�
 #: dlltool.c:3978
 #, fuzzy, c-format
 msgid ""
-"   -I --identify <implib>    Report the name of the DLL associated with <"
-"implib>.\n"
-msgstr "   -I --identify <implib>    報告名稱的動態鏈結函式庫關聯的與 <implib>。\n"
+"   -I --identify <implib>    Report the name of the DLL associated with "
+"<implib>.\n"
+msgstr ""
+"   -I --identify <implib>    報告名稱的動態鏈結函式庫關聯的與 <implib>。\n"
 
 #: dlltool.c:3979
 #, fuzzy, c-format
 msgid ""
-"      --identify-strict      Causes --identify to report error when multiple"
-" DLLs.\n"
-msgstr "      --identify-strict      造成 --identify 到報告錯誤時多重動態鏈結函式庫。\n"
+"      --identify-strict      Causes --identify to report error when multiple "
+"DLLs.\n"
+msgstr ""
+"      --identify-strict      造成 --identify 到報告錯誤時多重動態鏈結函式"
+"庫。\n"
 
 #: dlltool.c:3980
 #, c-format
@@ -1504,7 +1519,8 @@ msgstr "   @<file>                   從 <file> 讀取選項。\n"
 #, c-format
 msgid ""
 "   -M --mcore-elf <outname>  Process mcore-elf object files into <outname>.\n"
-msgstr "   -M --mcore-elf <輸出名稱> 處理 mcore-elf 物件檔案進入 <輸出名稱>。\n"
+msgstr ""
+"   -M --mcore-elf <輸出名稱> 處理 mcore-elf 物件檔案進入 <輸出名稱>。\n"
 
 #: dlltool.c:3986
 #, c-format
@@ -2170,8 +2186,8 @@ msgid "Unsupported form (%s) for attribute %s\n"
 msgstr ""
 
 #: dwarf.c:2274 dwarf.c:2299 dwarf.c:4344 dwarf.c:4654 readelf.c:5849
-#: readelf.c:5924 readelf.c:5942 readelf.c:5960 readelf.c:10408
-#: readelf.c:11040 readelf.c:15684 readelf.c:15716
+#: readelf.c:5924 readelf.c:5942 readelf.c:5960 readelf.c:10408 readelf.c:11040
+#: readelf.c:15684 readelf.c:15716
 #, fuzzy
 msgid "<unknown>"
 msgstr "<unknown>"
@@ -2339,8 +2355,8 @@ msgstr " [不具 DW_AT_frame_base]"
 #: dwarf.c:2664
 #, c-format
 msgid ""
-"Offset %s used as value for DW_AT_import attribute of DIE at offset 0x%lx is"
-" too big.\n"
+"Offset %s used as value for DW_AT_import attribute of DIE at offset 0x%lx is "
+"too big.\n"
 msgstr ""
 
 #: dwarf.c:2674
@@ -2498,15 +2514,15 @@ msgstr ""
 #: dwarf.c:3076
 #, c-format
 msgid ""
-"Debug info is corrupted, abbrev offset (%lx) is larger than abbrev section"
-" size (%lx)\n"
+"Debug info is corrupted, abbrev offset (%lx) is larger than abbrev section "
+"size (%lx)\n"
 msgstr ""
 
 #: dwarf.c:3082
 #, c-format
 msgid ""
-"Debug info is corrupted, abbrev size (%lx) is larger than abbrev section size"
-" (%lx)\n"
+"Debug info is corrupted, abbrev size (%lx) is larger than abbrev section "
+"size (%lx)\n"
 msgstr ""
 
 #: dwarf.c:3128
@@ -2549,8 +2565,8 @@ msgstr ""
 #, fuzzy, c-format
 #| msgid "The line info appears to be corrupt - the section is too small\n"
 msgid ""
-"The length field (0x%lx) in the debug_line header is wrong - the section is"
-" too small\n"
+"The length field (0x%lx) in the debug_line header is wrong - the section is "
+"too small\n"
 msgstr "列資訊似乎已損壞 - 區段過小\n"
 
 #: dwarf.c:3386
@@ -2679,8 +2695,8 @@ msgstr ""
 
 #: dwarf.c:3614 dwarf.c:4030
 msgid ""
-"Partial .debug_line. section encountered without a prior full .debug_line"
-" section\n"
+"Partial .debug_line. section encountered without a prior full .debug_line "
+"section\n"
 msgstr ""
 
 #: dwarf.c:3627 dwarf.c:5151
@@ -2918,10 +2934,10 @@ msgid "directory index %u > number of directories %s\n"
 msgstr ""
 
 #: dwarf.c:4349 dwarf.c:4648 elfcomm.c:891 readelf.c:309 readelf.c:650
-#: readelf.c:6844 readelf.c:7395 readelf.c:9389 readelf.c:11440
-#: readelf.c:11507 readelf.c:11511 readelf.c:11853 readelf.c:14540
-#: readelf.c:14635 readelf.c:15217 readelf.c:15236 readelf.c:15360
-#: readelf.c:15693 readelf.c:16808 readelf.c:16811
+#: readelf.c:6844 readelf.c:7395 readelf.c:9389 readelf.c:11440 readelf.c:11507
+#: readelf.c:11511 readelf.c:11853 readelf.c:14540 readelf.c:14635
+#: readelf.c:15217 readelf.c:15236 readelf.c:15360 readelf.c:15693
+#: readelf.c:16808 readelf.c:16811
 #, fuzzy, c-format
 msgid "<corrupt>"
 msgstr "<corrupt>"
@@ -2934,8 +2950,8 @@ msgstr ""
 #: dwarf.c:4360
 #, fuzzy, c-format
 msgid ""
-"File name                            Line number    Starting address    View "
-"   Stmt\n"
+"File name                            Line number    Starting address    "
+"View    Stmt\n"
 msgstr "檔案名稱                            列號    起始位址\n"
 
 #: dwarf.c:4476
@@ -3364,8 +3380,8 @@ msgstr ""
 #: dwarf.c:6068 dwarf.c:6497 dwarf.c:6812
 #, c-format
 msgid ""
-"Unable to load/parse the .debug_info section, so cannot interpret the %s"
-" section.\n"
+"Unable to load/parse the .debug_info section, so cannot interpret the %s "
+"section.\n"
 msgstr ""
 
 #: dwarf.c:6116
@@ -3380,8 +3396,8 @@ msgstr ""
 #: dwarf.c:6131
 #, c-format
 msgid ""
-" Warning: This section has relocations - addresses seen here may not be"
-" accurate.\n"
+" Warning: This section has relocations - addresses seen here may not be "
+"accurate.\n"
 "\n"
 msgstr ""
 
@@ -3533,8 +3549,8 @@ msgstr ""
 #, fuzzy, c-format
 #| msgid "The line info appears to be corrupt - the section is too small\n"
 msgid ""
-"The length field (0x%lx) in the debug_rnglists header is wrong - the section"
-" is too small\n"
+"The length field (0x%lx) in the debug_rnglists header is wrong - the section "
+"is too small\n"
 msgstr "列資訊似乎已損壞 - 區段過小\n"
 
 #: dwarf.c:6784
@@ -3706,8 +3722,8 @@ msgstr ""
 #: dwarf.c:8525
 #, c-format
 msgid ""
-"Augmentation string length %u must be rounded up to a multiple of 4 in"
-" .debug_names.\n"
+"Augmentation string length %u must be rounded up to a multiple of 4 in ."
+"debug_names.\n"
 msgstr ""
 
 #: dwarf.c:8530
@@ -3749,8 +3765,8 @@ msgstr ""
 #: dwarf.c:8587
 #, c-format
 msgid ""
-"Entry pool offset (0x%lx) exceeds unit size 0x%lx for unit 0x%lx in the"
-" debug_names\n"
+"Entry pool offset (0x%lx) exceeds unit size 0x%lx for unit 0x%lx in the "
+"debug_names\n"
 msgstr ""
 
 #: dwarf.c:8604
@@ -4280,8 +4296,8 @@ msgstr ""
 #: elfcomm.c:529
 #, c-format
 msgid ""
-"%s: the archive index is supposed to have 0x%lx entries of %d bytes, but the"
-" size is only 0x%lx\n"
+"%s: the archive index is supposed to have 0x%lx entries of %d bytes, but the "
+"size is only 0x%lx\n"
 msgstr ""
 
 #: elfcomm.c:539
@@ -4601,20 +4617,22 @@ msgid ""
 "  -a, --debug-syms       Display debugger-only symbols\n"
 "  -A, --print-file-name  Print name of the input file before every symbol\n"
 "  -B                     Same as --format=bsd\n"
-"  -C, --demangle[=STYLE] Decode low-level symbol names into user-level names\n"
-"                          The STYLE, if specified, can be `auto' (the"
-" default),\n"
-"                          `gnu', `lucid', `arm', `hp', `edg', `gnu-v3',"
-" `java'\n"
+"  -C, --demangle[=STYLE] Decode low-level symbol names into user-level "
+"names\n"
+"                          The STYLE, if specified, can be `auto' (the "
+"default),\n"
+"                          `gnu', `lucid', `arm', `hp', `edg', `gnu-v3', "
+"`java'\n"
 "                          or `gnat'\n"
 "      --no-demangle      Do not demangle low-level symbol names\n"
-"      --recurse-limit    Enable a demangling recursion limit.  This is the"
-" default.\n"
+"      --recurse-limit    Enable a demangling recursion limit.  This is the "
+"default.\n"
 "      --no-recurse-limit Disable a demangling recursion limit.\n"
 "  -D, --dynamic          Display dynamic symbols instead of normal symbols\n"
 "      --defined-only     Display only defined symbols\n"
 "  -e                     (ignored)\n"
-"  -f, --format=FORMAT    Use the output format FORMAT.  FORMAT can be `bsd',\n"
+"  -f, --format=FORMAT    Use the output format FORMAT.  FORMAT can be "
+"`bsd',\n"
 "                           `sysv' or `posix'.  The default is `bsd'\n"
 "  -g, --extern-only      Display only external symbols\n"
 "  -l, --line-numbers     Use debugging information to find a filename and\n"
@@ -4631,8 +4649,8 @@ msgstr ""
 "  -B                     等於 --format=bsd\n"
 "  -C, --demangle[=樣式]  解碼低階符號名稱成使用者階級的名稱\n"
 "                          若有指定 <樣式>，則可為 `auto' (預設值),\n"
-"                          `gnu', `lucid', `arm', `hp', `edg', `gnu-v3',"
-" `java'\n"
+"                          `gnu', `lucid', `arm', `hp', `edg', `gnu-v3', "
+"`java'\n"
 "                          或 `gnat'\n"
 "      --no-demangle      不要修復損壞的低階符號名稱\n"
 "      --recurse-limit    啟用修復損壞名稱的遞迴限制。這是預設值。\n"
@@ -4762,8 +4780,8 @@ msgstr ""
 #: nm.c:1380 nm.c:1431
 #, c-format
 msgid ""
-"Name                  Value   Class        Type         Size     Line "
-" Section\n"
+"Name                  Value   Class        Type         Size     Line  "
+"Section\n"
 "\n"
 msgstr ""
 "名稱                  值      類別         型態         大小     行號  區段\n"
@@ -4772,12 +4790,12 @@ msgstr ""
 #: nm.c:1383 nm.c:1434
 #, c-format
 msgid ""
-"Name                  Value           Class        Type         Size         "
-"    Line  Section\n"
+"Name                  Value           Class        Type         "
+"Size             Line  Section\n"
 "\n"
 msgstr ""
-"名稱                  值              類別         型態         大小             行號 "
-" 區段\n"
+"名稱                  值              類別         型態         大"
+"小             行號  區段\n"
 "\n"
 
 #: nm.c:1427
@@ -4837,22 +4855,23 @@ msgstr " 複製二進位檔案，它可能在此過程中進行變換\n"
 #, c-format
 msgid ""
 "  -I --input-target <bfdname>      Assume input file is in format <bfdname>\n"
-"  -O --output-target <bfdname>     Create an output file in format <bfdname>\n"
+"  -O --output-target <bfdname>     Create an output file in format "
+"<bfdname>\n"
 "  -B --binary-architecture <arch>  Set output arch, when input is arch-less\n"
-"  -F --target <bfdname>            Set both input and output format to <"
-"bfdname>\n"
-"     --debugging                   Convert debugging information, if"
-" possible\n"
-"  -p --preserve-dates              Copy modified/access timestamps to the"
-" output\n"
+"  -F --target <bfdname>            Set both input and output format to "
+"<bfdname>\n"
+"     --debugging                   Convert debugging information, if "
+"possible\n"
+"  -p --preserve-dates              Copy modified/access timestamps to the "
+"output\n"
 msgstr ""
 
 #: objcopy.c:548 objcopy.c:683
 #, c-format
 msgid ""
 "  -D --enable-deterministic-archives\n"
-"                                   Produce deterministic output when"
-" stripping archives (default)\n"
+"                                   Produce deterministic output when "
+"stripping archives (default)\n"
 "  -U --disable-deterministic-archives\n"
 "                                   Disable -D behavior\n"
 msgstr ""
@@ -4861,8 +4880,8 @@ msgstr ""
 #, c-format
 msgid ""
 "  -D --enable-deterministic-archives\n"
-"                                   Produce deterministic output when"
-" stripping archives\n"
+"                                   Produce deterministic output when "
+"stripping archives\n"
 "  -U --disable-deterministic-archives\n"
 "                                   Disable -D behavior (default)\n"
 msgstr ""
@@ -4871,91 +4890,95 @@ msgstr ""
 #, fuzzy, c-format
 msgid ""
 "  -j --only-section <name>         Only copy section <name> into the output\n"
-"     --add-gnu-debuglink=<file>    Add section .gnu_debuglink linking to <"
-"file>\n"
+"     --add-gnu-debuglink=<file>    Add section .gnu_debuglink linking to "
+"<file>\n"
 "  -R --remove-section <name>       Remove section <name> from the output\n"
 "     --remove-relocations <name>   Remove relocations from section <name>\n"
-"  -S --strip-all                   Remove all symbol and relocation"
-" information\n"
+"  -S --strip-all                   Remove all symbol and relocation "
+"information\n"
 "  -g --strip-debug                 Remove all debugging symbols & sections\n"
 "     --strip-dwo                   Remove all DWO sections\n"
-"     --strip-unneeded              Remove all symbols not needed by"
-" relocations\n"
+"     --strip-unneeded              Remove all symbols not needed by "
+"relocations\n"
 "  -N --strip-symbol <name>         Do not copy symbol <name>\n"
 "     --strip-unneeded-symbol <name>\n"
-"                                   Do not copy symbol <name> unless needed"
-" by\n"
+"                                   Do not copy symbol <name> unless needed "
+"by\n"
 "                                     relocations\n"
-"     --only-keep-debug             Strip everything but the debug"
-" information\n"
+"     --only-keep-debug             Strip everything but the debug "
+"information\n"
 "     --extract-dwo                 Copy only DWO sections\n"
 "     --extract-symbol              Remove section contents but keep symbols\n"
 "  -K --keep-symbol <name>          Do not strip symbol <name>\n"
 "     --keep-file-symbols           Do not strip file symbol(s)\n"
 "     --localize-hidden             Turn all ELF hidden symbols into locals\n"
-"  -L --localize-symbol <name>      Force symbol <name> to be marked as a"
-" local\n"
-"     --globalize-symbol <name>     Force symbol <name> to be marked as a"
-" global\n"
+"  -L --localize-symbol <name>      Force symbol <name> to be marked as a "
+"local\n"
+"     --globalize-symbol <name>     Force symbol <name> to be marked as a "
+"global\n"
 "  -G --keep-global-symbol <name>   Localize all symbols except <name>\n"
-"  -W --weaken-symbol <name>        Force symbol <name> to be marked as a"
-" weak\n"
-"     --weaken                      Force all global symbols to be marked as"
-" weak\n"
+"  -W --weaken-symbol <name>        Force symbol <name> to be marked as a "
+"weak\n"
+"     --weaken                      Force all global symbols to be marked as "
+"weak\n"
 "  -w --wildcard                    Permit wildcard in symbol comparison\n"
 "  -x --discard-all                 Remove all non-global symbols\n"
 "  -X --discard-locals              Remove any compiler-generated symbols\n"
 "  -i --interleave[=<number>]       Only copy N out of every <number> bytes\n"
 "     --interleave-width <number>   Set N for --interleave\n"
-"  -b --byte <num>                  Select byte <num> in every interleaved"
-" block\n"
+"  -b --byte <num>                  Select byte <num> in every interleaved "
+"block\n"
 "     --gap-fill <val>              Fill gaps between sections with <val>\n"
-"     --pad-to <addr>               Pad the last section up to address <addr>\n"
+"     --pad-to <addr>               Pad the last section up to address "
+"<addr>\n"
 "     --set-start <addr>            Set the start address to <addr>\n"
 "    {--change-start|--adjust-start} <incr>\n"
 "                                   Add <incr> to the start address\n"
 "    {--change-addresses|--adjust-vma} <incr>\n"
-"                                   Add <incr> to LMA, VMA and start"
-" addresses\n"
+"                                   Add <incr> to LMA, VMA and start "
+"addresses\n"
 "    {--change-section-address|--adjust-section-vma} <name>{=|+|-}<val>\n"
-"                                   Change LMA and VMA of section <name> by <"
-"val>\n"
+"                                   Change LMA and VMA of section <name> by "
+"<val>\n"
 "     --change-section-lma <name>{=|+|-}<val>\n"
-"                                   Change the LMA of section <name> by <val>\n"
+"                                   Change the LMA of section <name> by "
+"<val>\n"
 "     --change-section-vma <name>{=|+|-}<val>\n"
-"                                   Change the VMA of section <name> by <val>\n"
+"                                   Change the VMA of section <name> by "
+"<val>\n"
 "    {--[no-]change-warnings|--[no-]adjust-warnings}\n"
 "                                   Warn if a named section does not exist\n"
 "     --set-section-flags <name>=<flags>\n"
-"                                   Set section <name>'s properties to <flags"
-">\n"
-"     --add-section <name>=<file>   Add section <name> found in <file> to"
-" output\n"
+"                                   Set section <name>'s properties to "
+"<flags>\n"
+"     --add-section <name>=<file>   Add section <name> found in <file> to "
+"output\n"
 "     --update-section <name>=<file>\n"
 "                                   Update contents of section <name> with\n"
 "                                   contents found in <file>\n"
-"     --dump-section <name>=<file>  Dump the contents of section <name> into <"
-"file>\n"
+"     --dump-section <name>=<file>  Dump the contents of section <name> into "
+"<file>\n"
 "     --rename-section <old>=<new>[,<flags>] Rename section <old> to <new>\n"
 "     --long-section-names {enable|disable|keep}\n"
-"                                   Handle long section names in Coff"
-" objects.\n"
-"     --change-leading-char         Force output format's leading character"
-" style\n"
-"     --remove-leading-char         Remove leading character from global"
-" symbols\n"
-"     --reverse-bytes=<num>         Reverse <num> bytes at a time, in output"
-" sections with content\n"
+"                                   Handle long section names in Coff "
+"objects.\n"
+"     --change-leading-char         Force output format's leading character "
+"style\n"
+"     --remove-leading-char         Remove leading character from global "
+"symbols\n"
+"     --reverse-bytes=<num>         Reverse <num> bytes at a time, in output "
+"sections with content\n"
 "     --redefine-sym <old>=<new>    Redefine symbol name <old> to <new>\n"
 "     --redefine-syms <file>        --redefine-sym for all symbol pairs \n"
 "                                     listed in <file>\n"
-"     --srec-len <number>           Restrict the length of generated Srecords\n"
-"     --srec-forceS3                Restrict the type of generated Srecords to"
-" S3\n"
+"     --srec-len <number>           Restrict the length of generated "
+"Srecords\n"
+"     --srec-forceS3                Restrict the type of generated Srecords "
+"to S3\n"
 "     --strip-symbols <file>        -N for all symbols listed in <file>\n"
 "     --strip-unneeded-symbols <file>\n"
-"                                   --strip-unneeded-symbol for all symbols"
-" listed\n"
+"                                   --strip-unneeded-symbol for all symbols "
+"listed\n"
 "                                     in <file>\n"
 "     --keep-symbols <file>         -K for all symbols listed in <file>\n"
 "     --localize-symbols <file>     -L for all symbols listed in <file>\n"
@@ -4963,54 +4986,58 @@ msgid ""
 "     --keep-global-symbols <file>  -G for all symbols listed in <file>\n"
 "     --weaken-symbols <file>       -W for all symbols listed in <file>\n"
 "     --add-symbol <name>=[<section>:]<value>[,<flags>]  Add a symbol\n"
-"     --alt-machine-code <index>    Use the target's <index>'th alternative"
-" machine\n"
+"     --alt-machine-code <index>    Use the target's <index>'th alternative "
+"machine\n"
 "     --writable-text               Mark the output text as writable\n"
 "     --readonly-text               Make the output text write protected\n"
 "     --pure                        Mark the output file as demand paged\n"
 "     --impure                      Mark the output file as impure\n"
-"     --prefix-symbols <prefix>     Add <prefix> to start of every symbol"
-" name\n"
-"     --prefix-sections <prefix>    Add <prefix> to start of every section"
-" name\n"
+"     --prefix-symbols <prefix>     Add <prefix> to start of every symbol "
+"name\n"
+"     --prefix-sections <prefix>    Add <prefix> to start of every section "
+"name\n"
 "     --prefix-alloc-sections <prefix>\n"
-"                                   Add <prefix> to start of every"
-" allocatable\n"
+"                                   Add <prefix> to start of every "
+"allocatable\n"
 "                                     section name\n"
 "     --file-alignment <num>        Set PE file alignment to <num>\n"
 "     --heap <reserve>[,<commit>]   Set PE reserve/commit heap to <reserve>/\n"
 "                                   <commit>\n"
 "     --image-base <address>        Set PE image base to <address>\n"
 "     --section-alignment <num>     Set PE section alignment to <num>\n"
-"     --stack <reserve>[,<commit>]  Set PE reserve/commit stack to <reserve>/\n"
+"     --stack <reserve>[,<commit>]  Set PE reserve/commit stack to "
+"<reserve>/\n"
 "                                   <commit>\n"
 "     --subsystem <name>[:<version>]\n"
 "                                   Set PE subsystem to <name> [& <version>]\n"
 "     --compress-debug-sections[={none|zlib|zlib-gnu|zlib-gabi}]\n"
 "                                   Compress DWARF debug sections using zlib\n"
-"     --decompress-debug-sections   Decompress DWARF debug sections using"
-" zlib\n"
-"     --elf-stt-common=[yes|no]     Generate ELF common symbols with"
-" STT_COMMON\n"
+"     --decompress-debug-sections   Decompress DWARF debug sections using "
+"zlib\n"
+"     --elf-stt-common=[yes|no]     Generate ELF common symbols with "
+"STT_COMMON\n"
 "                                     type\n"
-"  -M  --merge-notes                Remove redundant entries in note sections\n"
-"      --no-merge-notes             Do not attempt to remove redundant notes"
-" (default)\n"
+"  -M  --merge-notes                Remove redundant entries in note "
+"sections\n"
+"      --no-merge-notes             Do not attempt to remove redundant notes "
+"(default)\n"
 "  -v --verbose                     List all object files modified\n"
 "  @<file>                          Read options from <file>\n"
 "  -V --version                     Display this program's version number\n"
 "  -h --help                        Display this output\n"
-"     --info                        List object formats & architectures"
-" supported\n"
+"     --info                        List object formats & architectures "
+"supported\n"
 msgstr ""
 "  -I --input-target <bfdname>      假設輸入檔案是在中格式 <bfdname>\n"
 "  -O --output-target <bfdname>     建立輸出檔案在中格式 <bfdname>\n"
-"  -B --binary-architecture <arch><bfdname>            設定兩者輸入與輸出格式到 <bfdname>\n"
+"  -B --binary-architecture <arch><bfdname>            設定兩者輸入與輸出格式"
+"到 <bfdname>\n"
 "     --debugging                   轉換除錯資訊，儘量\n"
 "  -p --preserve-dates              複製已修改/存取時間戳記到輸出\n"
 "  -j --only-section <name>         只有複製區段 <name> 進入輸出\n"
 "     --add-gnu-debuglink=<file>    加入區段.gnudebuglink 鏈結到 (_D)<file>\n"
-"  -R --remove-section <name>       移除區段 <name><name>         不複製符號 <name>\n"
+"  -R --remove-section <name>       移除區段 <name><name>         不複製符號 "
+"<name>\n"
 "     --strip-unneeded-symbol <name>\n"
 "                                   不複製符號 <name> 除非所需的由\n"
 "                                     重定址\n"
@@ -5022,8 +5049,8 @@ msgstr ""
 "  -L --localize-symbol <name>      強制符號 <name> 為標記的做為本地\n"
 "     --globalize-symbol <name>     強制符號 <name> 為標記的做為全域\n"
 "  -G --keep-global-symbol <name>   本地化所有符號除了 <name>\n"
-"  -W --weaken-symbol <name>        強制符號 <name><number>]       只有複製 N 超出每 <"
-"number> 位元組\n"
+"  -W --weaken-symbol <name>        強制符號 <name><number>]       只有複製 N "
+"超出每 <number> 位元組\n"
 "     --interleave-width <number>   設定 N 用於 --interleave\n"
 "  -b --byte <num>                  選取位元組 <num> 在中每交錯區塊\n"
 "     --gap-fill <val>              填充間隙介於區段與 <val>\n"
@@ -5044,8 +5071,8 @@ msgstr ""
 "     --set-section-flags <name>=<flags>\n"
 "                                   設定區段 <name>'s 性質到 <flags>\n"
 "     --add-section <name>=<file>   加入區段 <name> 找到在中 <file> 到輸出\n"
-"     --rename-section <old>=<new><flags>] 重新命名區段 <old> 到 <new><num>        "
-" 反向 <num> 位元組一次，在中輸出區段與內容\n"
+"     --rename-section <old>=<new><flags>] 重新命名區段 <old> 到 "
+"<new><num>         反向 <num> 位元組一次，在中輸出區段與內容\n"
 "     --redefine-sym <old>=<new>    重新定義符號名稱 <old> 到 <new>\n"
 "     --redefine-syms <file>        --redefine-sym 用於所有符號對\n"
 "                                     清單的在中 <file>\n"
@@ -5058,11 +5085,12 @@ msgstr ""
 "     --globalize-symbols <file>    --globalize-symbol 用於所有在中 <file>\n"
 "     --keep-global-symbols <file>  -G 用於所有符號清單的在中 <file>\n"
 "     --weaken-symbols <file>       -W 用於所有符號清單的在中 <file>\n"
-"     --alt-machine-code <index>    使用目標 <index><prefix>     加入 <prefix>"
-" 啟始的每符號名稱\n"
+"     --alt-machine-code <index>    使用目標 <index><prefix>     加入 "
+"<prefix> 啟始的每符號名稱\n"
 "     --prefix-sections <prefix>    加入 <prefix> 啟始的每節段名稱\n"
 "     --prefix-alloc-sections <prefix>\n"
-"                                   加入 <prefix><num>        設定 PE 檔案對齊到 <num>\n"
+"                                   加入 <prefix><num>        設定 PE 檔案對齊"
+"到 <num>\n"
 "     --heap <reserve><commit>]   設定 PE 保留/認可堆積到 <reserve>/\n"
 "                                   <commit>\n"
 "     --image-base <address>        設定 PE 映像基底到 <address>\n"
@@ -5070,8 +5098,8 @@ msgstr ""
 "     --stack <reserve><commit>]  設定 PE 保留/認可堆疊到 <reserve>/\n"
 "                                   <commit>\n"
 "     --subsystem <name><version>]\n"
-"                                   設定 PE 子系統到 <name><version><file>          "
-"                讀取選項從 <file>"
+"                                   設定 PE 子系統到 "
+"<name><version><file>                          讀取選項從 <file>"
 
 #: objcopy.c:673
 #, c-format
@@ -5087,29 +5115,30 @@ msgstr "從檔案中刪除符號和區段\n"
 #, c-format
 msgid ""
 "  -I --input-target=<bfdname>      Assume input file is in format <bfdname>\n"
-"  -O --output-target=<bfdname>     Create an output file in format <bfdname>\n"
-"  -F --target=<bfdname>            Set both input and output format to <"
-"bfdname>\n"
-"  -p --preserve-dates              Copy modified/access timestamps to the"
-" output\n"
+"  -O --output-target=<bfdname>     Create an output file in format "
+"<bfdname>\n"
+"  -F --target=<bfdname>            Set both input and output format to "
+"<bfdname>\n"
+"  -p --preserve-dates              Copy modified/access timestamps to the "
+"output\n"
 msgstr ""
 
 #: objcopy.c:694
 #, fuzzy, c-format
 msgid ""
-"  -R --remove-section=<name>       Also remove section <name> from the"
-" output\n"
+"  -R --remove-section=<name>       Also remove section <name> from the "
+"output\n"
 "     --remove-relocations <name>   Remove relocations from section <name>\n"
-"  -s --strip-all                   Remove all symbol and relocation"
-" information\n"
+"  -s --strip-all                   Remove all symbol and relocation "
+"information\n"
 "  -g -S -d --strip-debug           Remove all debugging symbols & sections\n"
 "     --strip-dwo                   Remove all DWO sections\n"
-"     --strip-unneeded              Remove all symbols not needed by"
-" relocations\n"
-"     --only-keep-debug             Strip everything but the debug"
-" information\n"
-"  -M  --merge-notes                Remove redundant entries in note sections"
-" (default)\n"
+"     --strip-unneeded              Remove all symbols not needed by "
+"relocations\n"
+"     --only-keep-debug             Strip everything but the debug "
+"information\n"
+"  -M  --merge-notes                Remove redundant entries in note sections "
+"(default)\n"
 "      --no-merge-notes             Do not attempt to remove redundant notes\n"
 "  -N --strip-symbol=<name>         Do not copy symbol <name>\n"
 "  -K --keep-symbol=<name>          Do not strip symbol <name>\n"
@@ -5120,17 +5149,18 @@ msgid ""
 "  -v --verbose                     List all object files modified\n"
 "  -V --version                     Display this program's version number\n"
 "  -h --help                        Display this output\n"
-"     --info                        List object formats & architectures"
-" supported\n"
+"     --info                        List object formats & architectures "
+"supported\n"
 "  -o <file>                        Place stripped output into <file>\n"
 msgstr ""
 "  -I --input-target=<bfdname>      假設輸入檔案是在中格式 <bfdname>\n"
 "  -O --output-target=<bfdname>     建立輸出檔案在中格式 <bfdname>\n"
 "  -F --target=<bfdname>            設定兩者輸入與輸出格式到 <bfdname>\n"
 "  -p --preserve-dates              複製已修改/存取時間戳記到輸出\n"
-"  -R --remove-section=<name>       移除區段 <name><name>         不複製符號 <name>\n"
-"  -K --keep-symbol=<name>          不截除符號 <name><file>                       "
-" 置放截除的輸出進入 <file>\n"
+"  -R --remove-section=<name>       移除區段 <name><name>         不複製符號 "
+"<name>\n"
+"  -K --keep-symbol=<name>          不截除符號 "
+"<name><file>                        置放截除的輸出進入 <file>\n"
 
 #: objcopy.c:769
 #, c-format
@@ -5699,23 +5729,24 @@ msgstr " 至少必須指定以下選項任一：\n"
 msgid ""
 "  -a, --archive-headers    Display archive header information\n"
 "  -f, --file-headers       Display the contents of the overall file header\n"
-"  -p, --private-headers    Display object format specific file header"
-" contents\n"
+"  -p, --private-headers    Display object format specific file header "
+"contents\n"
 "  -P, --private=OPT,OPT... Display object format specific contents\n"
 "  -h, --[section-]headers  Display the contents of the section headers\n"
 "  -x, --all-headers        Display the contents of all headers\n"
-"  -d, --disassemble        Display assembler contents of executable sections\n"
+"  -d, --disassemble        Display assembler contents of executable "
+"sections\n"
 "  -D, --disassemble-all    Display assembler contents of all sections\n"
 "      --disassemble=<sym>  Display assembler contents from <sym>\n"
 "  -S, --source             Intermix source code with disassembly\n"
-"  -s, --full-contents      Display the full contents of all sections"
-" requested\n"
+"  -s, --full-contents      Display the full contents of all sections "
+"requested\n"
 "  -g, --debugging          Display debug information in object file\n"
 "  -e, --debugging-tags     Display debug information using ctags style\n"
 "  -G, --stabs              Display (in raw form) any STABS info in the file\n"
 "  -W[lLiaprmfFsoRtUuTgAckK] or\n"
-"  --dwarf[=rawline,=decodedline,=info,=abbrev,=pubnames,=aranges,=macro,=frame"
-"s,\n"
+"  --dwarf[=rawline,=decodedline,=info,=abbrev,=pubnames,=aranges,=macro,"
+"=frames,\n"
 "          =frames-interp,=str,=loc,=Ranges,=pubtypes,\n"
 "          =gdb_index,=trace_info,=trace_abbrev,=trace_aranges,\n"
 "          =addr,=cu_index,=links,=follow-links]\n"
@@ -5723,8 +5754,8 @@ msgid ""
 "  -t, --syms               Display the contents of the symbol table(s)\n"
 "  -T, --dynamic-syms       Display the contents of the dynamic symbol table\n"
 "  -r, --reloc              Display the relocation entries in the file\n"
-"  -R, --dynamic-reloc      Display the dynamic relocation entries in the"
-" file\n"
+"  -R, --dynamic-reloc      Display the dynamic relocation entries in the "
+"file\n"
 "  @<file>                  Read options from <file>\n"
 "  -v, --version            Display this program's version number\n"
 "  -i, --info               List object formats and architectures supported\n"
@@ -5732,8 +5763,8 @@ msgid ""
 msgstr ""
 "  -a, --archive-headers    顯示封存標頭資訊\n"
 "  -f, --file-headers       顯示整體檔案標頭的內容\n"
-"  -p, --private-headers    Display object format specific file header"
-" contents\n"
+"  -p, --private-headers    Display object format specific file header "
+"contents\n"
 "  -P, --private=OPT,OPT... Display object format specific contents\n"
 "  -h, --[section-]headers  顯示區段標頭的內容\n"
 "  -x, --all-headers        顯示全部標頭的內容\n"
@@ -5746,8 +5777,8 @@ msgstr ""
 "  -e, --debugging-tags     使用 ctags 樣式顯示除錯資訊\n"
 "  -G, --stabs              (使用原始格式) 顯示檔案中的任何 STABS 資訊\n"
 "  -W[lLiaprmfFsoRtUuTgAckK] 或\n"
-"  --dwarf[=rawline,=decodedline,=info,=abbrev,=pubnames,=aranges,=macro,=frame"
-"s,\n"
+"  --dwarf[=rawline,=decodedline,=info,=abbrev,=pubnames,=aranges,=macro,"
+"=frames,\n"
 "          =frames-interp,=str,=loc,=Ranges,=pubtypes,\n"
 "          =gdb_index,=trace_info,=trace_abbrev,=trace_aranges,\n"
 "          =addr,=cu_index,=links,=follow-links]\n"
@@ -5773,43 +5804,47 @@ msgstr ""
 #: objdump.c:242
 #, c-format
 msgid ""
-"  -b, --target=BFDNAME           Specify the target object format as BFDNAME\n"
+"  -b, --target=BFDNAME           Specify the target object format as "
+"BFDNAME\n"
 "  -m, --architecture=MACHINE     Specify the target architecture as MACHINE\n"
 "  -j, --section=NAME             Only display information for section NAME\n"
 "  -M, --disassembler-options=OPT Pass text OPT on to the disassembler\n"
-"  -EB --endian=big               Assume big endian format when disassembling\n"
-"  -EL --endian=little            Assume little endian format when"
-" disassembling\n"
-"      --file-start-context       Include context from start of file (with"
-" -S)\n"
+"  -EB --endian=big               Assume big endian format when "
+"disassembling\n"
+"  -EL --endian=little            Assume little endian format when "
+"disassembling\n"
+"      --file-start-context       Include context from start of file (with -"
+"S)\n"
 "  -I, --include=DIR              Add DIR to search list for source files\n"
-"  -l, --line-numbers             Include line numbers and filenames in"
-" output\n"
-"  -F, --file-offsets             Include file offsets when displaying"
-" information\n"
+"  -l, --line-numbers             Include line numbers and filenames in "
+"output\n"
+"  -F, --file-offsets             Include file offsets when displaying "
+"information\n"
 "  -C, --demangle[=STYLE]         Decode mangled/processed symbol names\n"
-"                                  The STYLE, if specified, can be `auto',"
-" `gnu',\n"
-"                                  `lucid', `arm', `hp', `edg', `gnu-v3',"
-" `java'\n"
+"                                  The STYLE, if specified, can be `auto', "
+"`gnu',\n"
+"                                  `lucid', `arm', `hp', `edg', `gnu-v3', "
+"`java'\n"
 "                                  or `gnat'\n"
-"      --recurse-limit            Enable a limit on recursion whilst"
-" demangling.  [Default]\n"
-"      --no-recurse-limit         Disable a limit on recursion whilst"
-" demangling\n"
+"      --recurse-limit            Enable a limit on recursion whilst "
+"demangling.  [Default]\n"
+"      --no-recurse-limit         Disable a limit on recursion whilst "
+"demangling\n"
 "  -w, --wide                     Format output for more than 80 columns\n"
-"  -z, --disassemble-zeroes       Do not skip blocks of zeroes when"
-" disassembling\n"
+"  -z, --disassemble-zeroes       Do not skip blocks of zeroes when "
+"disassembling\n"
 "      --start-address=ADDR       Only process data whose address is >= ADDR\n"
 "      --stop-address=ADDR        Only process data whose address is <= ADDR\n"
-"      --prefix-addresses         Print complete address alongside"
-" disassembly\n"
+"      --prefix-addresses         Print complete address alongside "
+"disassembly\n"
 "      --[no-]show-raw-insn       Display hex alongside symbolic disassembly\n"
-"      --insn-width=WIDTH         Display WIDTH bytes on a single line for -d\n"
-"      --adjust-vma=OFFSET        Add OFFSET to all displayed section"
-" addresses\n"
+"      --insn-width=WIDTH         Display WIDTH bytes on a single line for -"
+"d\n"
+"      --adjust-vma=OFFSET        Add OFFSET to all displayed section "
+"addresses\n"
 "      --special-syms             Include special symbols in symbol dumps\n"
-"      --inlines                  Print all inlines for source line (with -l)\n"
+"      --inlines                  Print all inlines for source line (with -"
+"l)\n"
 "      --prefix=PREFIX            Add PREFIX to absolute paths for -S\n"
 "      --prefix-strip=LEVEL       Strip initial directory names for -S\n"
 msgstr ""
@@ -5825,8 +5860,8 @@ msgstr ""
 "  -F, --file-offsets             顯示資訊時增加檔案位移\n"
 "  -C, --demangle[=樣式]          解碼損壞/處理過的符號名稱\n"
 "                                  如果指定 <樣式>，則可為 `auto', `gnu',\n"
-"                                  `lucid', `arm', `hp', `edg', `gnu-v3',"
-" `java'\n"
+"                                  `lucid', `arm', `hp', `edg', `gnu-v3', "
+"`java'\n"
 "                                  或 `gnat'\n"
 "      --recurse-limit            啟用修復損壞名稱時的遞迴限制。[預設值]\n"
 "      --no-recurse-limit         停用修復損壞名稱時的遞迴限制。\n"
@@ -5839,7 +5874,8 @@ msgstr ""
 "      --insn-width=寬度          對 -d 輸出的每一行顯示 <寬度> 長位元組\n"
 "      --adjust-vma=位移          對所有顯示的選擇區域位址新增 <位移>\n"
 "      --special-syms             包含符號傾印中的特殊符號\n"
-"      --inlines                  輸出來源行的所有內嵌 (inline) 項目。(與 -l 一起使用)\n"
+"      --inlines                  輸出來源行的所有內嵌 (inline) 項目。(與 -l "
+"一起使用)\n"
 "      --prefix=前綴              對 -S 增加 <前綴> 至絕對路徑\n"
 "      --prefix-strip=階層        除去 -S 的開始目錄名稱\n"
 
@@ -5847,10 +5883,11 @@ msgstr ""
 #, c-format
 msgid ""
 "      --dwarf-depth=N        Do not display DIEs at depth N or greater\n"
-"      --dwarf-start=N        Display DIEs starting with N, at the same depth\n"
+"      --dwarf-start=N        Display DIEs starting with N, at the same "
+"depth\n"
 "                             or deeper\n"
-"      --dwarf-check          Make additional dwarf internal consistency"
-" checks.      \n"
+"      --dwarf-check          Make additional dwarf internal consistency "
+"checks.      \n"
 "\n"
 msgstr ""
 "      --dwarf-depth=N        不顯示 N 或更深層的 DIE\n"
@@ -6971,31 +7008,36 @@ msgstr " 偏移量     資訊    類型            符號值      符號名稱\n
 #: readelf.c:1192
 #, c-format
 msgid ""
-"    Offset             Info             Type               Symbol's Value "
-" Symbol's Name + Addend\n"
+"    Offset             Info             Type               Symbol's Value  "
+"Symbol's Name + Addend\n"
 msgstr ""
-"    偏移量             資訊             類型               符號值          符號名稱 + 加數\n"
+"    偏移量             資訊             類型               符號值          符"
+"號名稱 + 加數\n"
 
 #: readelf.c:1194
 #, c-format
 msgid ""
-"  Offset          Info           Type           Sym. Value    Sym. Name +"
-" Addend\n"
-msgstr "  偏移量          資訊           類型           符號值        符號名稱 + 加數\n"
+"  Offset          Info           Type           Sym. Value    Sym. Name + "
+"Addend\n"
+msgstr ""
+"  偏移量          資訊           類型           符號值        符號名稱 + 加"
+"數\n"
 
 #: readelf.c:1199
 #, c-format
 msgid ""
-"    Offset             Info             Type               Symbol's Value "
-" Symbol's Name\n"
+"    Offset             Info             Type               Symbol's Value  "
+"Symbol's Name\n"
 msgstr ""
-"    偏移量             資訊             類型               符號值          符號名稱\n"
+"    偏移量             資訊             類型               符號值          符"
+"號名稱\n"
 
 #: readelf.c:1201
 #, c-format
 msgid ""
 "  Offset          Info           Type           Sym. Value    Sym. Name\n"
-msgstr "  偏移量          資訊           類型           符號值        符號名稱\n"
+msgstr ""
+"  偏移量          資訊           類型           符號值        符號名稱\n"
 
 #: readelf.c:1586 readelf.c:1776 readelf.c:1784
 #, c-format
@@ -7171,8 +7213,8 @@ msgstr "獨立應用程式"
 msgid "Bare-metal C6000"
 msgstr "Bare-metal C6000"
 
-#: readelf.c:3799 readelf.c:4733 readelf.c:4749 readelf.c:17138
-#: readelf.c:17235 readelf.c:17266 readelf.c:17321
+#: readelf.c:3799 readelf.c:4733 readelf.c:4749 readelf.c:17138 readelf.c:17235
+#: readelf.c:17266 readelf.c:17321
 #, c-format
 msgid "<unknown: %x>"
 msgstr "<未知：%x>"
@@ -7217,20 +7259,21 @@ msgid ""
 "  -V --version-info      Display the version sections (if present)\n"
 "  -A --arch-specific     Display architecture specific information (if any)\n"
 "  -c --archive-index     Display the symbol/file index in an archive\n"
-"  -D --use-dynamic       Use the dynamic section info when displaying"
-" symbols\n"
+"  -D --use-dynamic       Use the dynamic section info when displaying "
+"symbols\n"
 "  -x --hex-dump=<number|name>\n"
-"                         Dump the contents of section <number|name> as bytes\n"
+"                         Dump the contents of section <number|name> as "
+"bytes\n"
 "  -p --string-dump=<number|name>\n"
-"                         Dump the contents of section <number|name> as"
-" strings\n"
+"                         Dump the contents of section <number|name> as "
+"strings\n"
 "  -R --relocated-dump=<number|name>\n"
-"                         Dump the contents of section <number|name> as"
-" relocated bytes\n"
+"                         Dump the contents of section <number|name> as "
+"relocated bytes\n"
 "  -z --decompress        Decompress section before dumping it\n"
 "  -w[lLiaprmfFsoRtUuTgAckK] or\n"
-"  --debug-dump[=rawline,=decodedline,=info,=abbrev,=pubnames,=aranges,=macro,="
-"frames,\n"
+"  --debug-dump[=rawline,=decodedline,=info,=abbrev,=pubnames,=aranges,=macro,"
+"=frames,\n"
 "               =frames-interp,=str,=loc,=Ranges,=pubtypes,\n"
 "               =gdb_index,=trace_info,=trace_abbrev,=trace_aranges,\n"
 "               =addr,=cu_index,=links,=follow-links]\n"
@@ -7436,14 +7479,14 @@ msgstr " <corrupt: out of range>"
 
 #: readelf.c:4892 readelf.c:4939
 msgid ""
-"The e_phentsize field in the ELF header is less than the size of an ELF"
-" program header\n"
+"The e_phentsize field in the ELF header is less than the size of an ELF "
+"program header\n"
 msgstr ""
 
 #: readelf.c:4896 readelf.c:4943
 msgid ""
-"The e_phentsize field in the ELF header is larger than the size of an ELF"
-" program header\n"
+"The e_phentsize field in the ELF header is larger than the size of an ELF "
+"program header\n"
 msgstr ""
 
 #: readelf.c:4899 readelf.c:4946
@@ -7463,8 +7506,8 @@ msgstr "記憶體不足讀取長符號名稱在中封存\n"
 #: readelf.c:5025
 #, fuzzy
 msgid ""
-"possibly corrupt ELF header - it has a non-zero program header offset, but no"
-" program headers\n"
+"possibly corrupt ELF header - it has a non-zero program header offset, but "
+"no program headers\n"
 msgstr "可能會損壞 ELF 頁首 - 它有非零程式頁首偏移，但是沒有程式頁首"
 
 #: readelf.c:5030
@@ -7515,14 +7558,17 @@ msgstr ""
 #, c-format
 msgid ""
 "  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align\n"
-msgstr "  類型           偏移量   虛擬位址   實體位址 檔案大小 記憶大小 旗標 對齊\n"
+msgstr ""
+"  類型           偏移量   虛擬位址   實體位址 檔案大小 記憶大小 旗標 對齊\n"
 
 #: readelf.c:5060
 #, c-format
 msgid ""
-"  Type           Offset   VirtAddr           PhysAddr           FileSiz "
-" MemSiz   Flg Align\n"
-msgstr "  類型           偏移量   虛擬位址           實體位址          檔案大小  記憶大小 旗標 對齊\n"
+"  Type           Offset   VirtAddr           PhysAddr           FileSiz  "
+"MemSiz   Flg Align\n"
+msgstr ""
+"  類型           偏移量   虛擬位址           實體位址          檔案大小  記憶"
+"大小 旗標 對齊\n"
 
 #: readelf.c:5064
 #, c-format
@@ -7580,8 +7626,8 @@ msgstr "無法找到程式解譯器名稱\n"
 #: readelf.c:5255
 #, fuzzy
 msgid ""
-"Internal error: failed to create format string to display program"
-" interpreter\n"
+"Internal error: failed to create format string to display program "
+"interpreter\n"
 msgstr "內部錯誤：無法建立格式字串要顯示程式解譯器\n"
 
 #: readelf.c:5259
@@ -7624,14 +7670,14 @@ msgstr "虛擬位址 0x%lx 不位於任何 PT_LOAD 節區中。\n"
 
 #: readelf.c:5351 readelf.c:5416
 msgid ""
-"The e_shentsize field in the ELF header is less than the size of an ELF"
-" section header\n"
+"The e_shentsize field in the ELF header is less than the size of an ELF "
+"section header\n"
 msgstr ""
 
 #: readelf.c:5355 readelf.c:5421
 msgid ""
-"The e_shentsize field in the ELF header is larger than the size of an ELF"
-" section header\n"
+"The e_shentsize field in the ELF header is larger than the size of an ELF "
+"section header\n"
 msgstr ""
 
 #: readelf.c:5359 readelf.c:5426
@@ -7675,7 +7721,8 @@ msgstr "符號"
 
 #: readelf.c:5526 readelf.c:5643
 msgid ""
-"Multiple symbol table index sections associated with the same symbol section\n"
+"Multiple symbol table index sections associated with the same symbol "
+"section\n"
 msgstr ""
 
 #: readelf.c:5533 readelf.c:5650
@@ -7710,8 +7757,8 @@ msgstr ""
 #: readelf.c:6024
 #, fuzzy
 msgid ""
-"possibly corrupt ELF file header - it has a non-zero section header offset,"
-" but no section headers\n"
+"possibly corrupt ELF file header - it has a non-zero section header offset, "
+"but no section headers\n"
 msgstr "可能會損壞 ELF 檔案頁首 - 它有非零小節標頭偏移，但是沒有小節標頭\n"
 
 #: readelf.c:6029
@@ -7794,9 +7841,11 @@ msgstr ""
 #: readelf.c:6278
 #, c-format
 msgid ""
-"  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf"
-" Al\n"
-msgstr "  [號] 名稱              類型            位址     偏移   大小   全 旗標 連結 資  齊\n"
+"  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk "
+"Inf Al\n"
+msgstr ""
+"  [號] 名稱              類型            位址     偏移   大小   全 旗標 連結 "
+"資  齊\n"
 
 #: readelf.c:6285
 #, c-format
@@ -7806,10 +7855,11 @@ msgstr ""
 #: readelf.c:6289
 #, c-format
 msgid ""
-"  [Nr] Name              Type            Address          Off    Size   ES"
-" Flg Lk Inf Al\n"
+"  [Nr] Name              Type            Address          Off    Size   ES "
+"Flg Lk Inf Al\n"
 msgstr ""
-"  [號] 名稱              類型            位址            偏移    大小   全 標  連 資  齊\n"
+"  [號] 名稱              類型            位址            偏移    大小   全 "
+"標  連 資  齊\n"
 
 #: readelf.c:6296
 #, fuzzy, c-format
@@ -8411,8 +8461,8 @@ msgstr ""
 #, c-format
 msgid ""
 "\n"
-"The decoding of unwind sections for machine type %s is not currently"
-" supported.\n"
+"The decoding of unwind sections for machine type %s is not currently "
+"supported.\n"
 msgstr ""
 
 #: readelf.c:9345
@@ -9146,8 +9196,8 @@ msgstr ""
 #: readelf.c:12542
 #, c-format
 msgid ""
-"Missing knowledge of 32-bit reloc types used in DWARF sections of machine"
-" number %d\n"
+"Missing knowledge of 32-bit reloc types used in DWARF sections of machine "
+"number %d\n"
 msgstr ""
 
 #: readelf.c:13209
@@ -9217,8 +9267,8 @@ msgstr "無法找到 %s 區段的位置！\n"
 #: readelf.c:13499
 #, fuzzy, c-format
 msgid ""
-"  Note: This section has relocations against it, but these have NOT been"
-" applied to this dump.\n"
+"  Note: This section has relocations against it, but these have NOT been "
+"applied to this dump.\n"
 msgstr "  註記：這個區段有重定址針對它，但是這些未被套用到這個傾印。\n"
 
 #: readelf.c:13532 readelf.c:14621 readelf.c:14664 readelf.c:14712
@@ -9244,8 +9294,8 @@ msgstr ""
 #: readelf.c:13650
 #, fuzzy, c-format
 msgid ""
-" NOTE: This section has relocations against it, but these have NOT been"
-" applied to this dump.\n"
+" NOTE: This section has relocations against it, but these have NOT been "
+"applied to this dump.\n"
 msgstr " 註記：這個區段有重定址針對它，但是這些未被套用到這個傾印。\n"
 
 #: readelf.c:13719
@@ -10952,8 +11002,8 @@ msgstr "備註"
 #| "Notes at offset 0x%08lx with length 0x%08lx:\n"
 msgid ""
 "\n"
-"Displaying contents of Renesas V850 notes section at offset 0x%lx with length"
-" 0x%lx:\n"
+"Displaying contents of Renesas V850 notes section at offset 0x%lx with "
+"length 0x%lx:\n"
 msgstr ""
 "\n"
 "備註位於偏移量 0x%08lx 長度為 0x%08lx：\n"
@@ -11039,11 +11089,11 @@ msgstr ""
 #: readelf.c:19462
 #, c-format
 msgid ""
-"%s: %ld byte remains in the symbol table, but without corresponding entries"
-" in the index table\n"
+"%s: %ld byte remains in the symbol table, but without corresponding entries "
+"in the index table\n"
 msgid_plural ""
-"%s: %ld bytes remain in the symbol table, but without corresponding entries"
-" in the index table\n"
+"%s: %ld bytes remain in the symbol table, but without corresponding entries "
+"in the index table\n"
 msgstr[0] ""
 
 #: readelf.c:19475
@@ -11342,10 +11392,6 @@ msgstr "%s：%s：位址超出界限"
 msgid "Resources nest too deep"
 msgstr ""
 
-#: rescoff.c:202
-msgid "directory"
-msgstr "目錄"
-
 #: rescoff.c:230
 msgid "named directory entry"
 msgstr "已命名的目錄條目"
@@ -11517,10 +11563,10 @@ msgstr " 如果沒有指定輸入檔案，預設為 a.out\n"
 msgid ""
 " The options are:\n"
 "  -A|-B     --format={sysv|berkeley}  Select output style (default is %s)\n"
-"  -o|-d|-x  --radix={8|10|16}         Display numbers in octal, decimal or"
-" hex\n"
-"  -t        --totals                  Display the total sizes (Berkeley"
-" only)\n"
+"  -o|-d|-x  --radix={8|10|16}         Display numbers in octal, decimal or "
+"hex\n"
+"  -t        --totals                  Display the total sizes (Berkeley "
+"only)\n"
 "            --common                  Display total size for *COM* syms\n"
 "            --target=<bfdname>        Set the binary file format\n"
 "            @<file>                   Read options from <file>\n"
@@ -11793,8 +11839,8 @@ msgstr " 顯示 [檔案] (預設為標準輸入) 中可列印的字串\n"
 #: strings.c:703
 #, c-format
 msgid ""
-"  -a - --all                Scan the entire file, not just the data section"
-" [default]\n"
+"  -a - --all                Scan the entire file, not just the data section "
+"[default]\n"
 "  -d --data                 Only scan the data sections in the file\n"
 msgstr ""
 "  -a - --all                掃描整個檔案，而不只資料區段 [預設值]\n"
@@ -11804,8 +11850,8 @@ msgstr ""
 #, c-format
 msgid ""
 "  -a - --all                Scan the entire file, not just the data section\n"
-"  -d --data                 Only scan the data sections in the file"
-" [default]\n"
+"  -d --data                 Only scan the data sections in the file "
+"[default]\n"
 msgstr ""
 "  -a - --all                掃描整個檔案，而不只資料區段\n"
 "  -d --data                 只掃描檔案中的資料區段 [預設值]\n"
@@ -11814,17 +11860,18 @@ msgstr ""
 #, c-format
 msgid ""
 "  -f --print-file-name      Print the name of the file before each string\n"
-"  -n --bytes=[number]       Locate & print any NUL-terminated sequence of at\n"
+"  -n --bytes=[number]       Locate & print any NUL-terminated sequence of "
+"at\n"
 "  -<number>                   least [number] characters (default 4).\n"
-"  -t --radix={o,d,x}        Print the location of the string in base 8, 10 or"
-" 16\n"
-"  -w --include-all-whitespace Include all whitespace as valid string"
-" characters\n"
+"  -t --radix={o,d,x}        Print the location of the string in base 8, 10 "
+"or 16\n"
+"  -w --include-all-whitespace Include all whitespace as valid string "
+"characters\n"
 "  -o                        An alias for --radix=o\n"
 "  -T --target=<BFDNAME>     Specify the binary file format\n"
 "  -e --encoding={s,S,b,l,B,L} Select character size and endianness:\n"
-"                            s = 7-bit, S = 8-bit, {b,l} = 16-bit, {B,L} ="
-" 32-bit\n"
+"                            s = 7-bit, S = 8-bit, {b,l} = 16-bit, {B,L} = 32-"
+"bit\n"
 "  -s --output-separator=<string> String used to separate strings in output.\n"
 "  @<file>                   Read options from <file>\n"
 "  -h --help                 Display this information\n"
@@ -11838,8 +11885,8 @@ msgstr ""
 "  -o                        --radix=o 的別名\n"
 "  -T --target=<BFDNAME>     指定二進位檔格式\n"
 "  -e --encoding={s,S,b,l,B,L} 選擇字元長度及端序：\n"
-"                            s = 7-bit, S = 8-bit, {b,l} = 16-bit, {B,L} ="
-" 32-bit\n"
+"                            s = 7-bit, S = 8-bit, {b,l} = 16-bit, {B,L} = 32-"
+"bit\n"
 "  -s --output-separator=<字串> 用來分隔輸出字串的 <字串>。\n"
 "  @<檔案>                   讀取 <檔案> 的選項\n"
 "  -h --help                 顯示此說明\n"
@@ -11925,8 +11972,8 @@ msgstr ""
 #, c-format
 msgid ""
 "This program is free software; you may redistribute it under the terms of\n"
-"the GNU General Public License version 3 or (at your option) any later"
-" version.\n"
+"the GNU General Public License version 3 or (at your option) any later "
+"version.\n"
 "This program has absolutely no warranty.\n"
 msgstr ""
 
@@ -11946,26 +11993,26 @@ msgid ""
 " The options are:\n"
 "  -a --ascii_in                Read input file as ASCII file\n"
 "  -A --ascii_out               Write binary messages as ASCII\n"
-"  -b --binprefix               .bin filename is prefixed by .mc filename_ for"
-" uniqueness.\n"
+"  -b --binprefix               .bin filename is prefixed by .mc filename_ "
+"for uniqueness.\n"
 "  -c --customflag              Set custom flags for messages\n"
 "  -C --codepage_in=<val>       Set codepage when reading mc text file\n"
 "  -d --decimal_values          Print values to text files decimal\n"
-"  -e --extension=<extension>   Set header extension used on export header"
-" file\n"
+"  -e --extension=<extension>   Set header extension used on export header "
+"file\n"
 "  -F --target <target>         Specify output target for endianness.\n"
 "  -h --headerdir=<directory>   Set the export directory for headers\n"
 "  -u --unicode_in              Read input file as UTF16 file\n"
 "  -U --unicode_out             Write binary messages as UFT16\n"
 "  -m --maxlength=<val>         Set the maximal allowed message length\n"
 "  -n --nullterminate           Automatic add a zero termination to strings\n"
-"  -o --hresult_use             Use HRESULT definition instead of status code"
-" definition\n"
+"  -o --hresult_use             Use HRESULT definition instead of status code "
+"definition\n"
 "  -O --codepage_out=<val>      Set codepage used for writing text file\n"
 "  -r --rcdir=<directory>       Set the export directory for rc files\n"
 "  -x --xdbg=<directory>        Where to create the .dbg C include file\n"
-"                               that maps message ID's to their symbolic"
-" name.\n"
+"                               that maps message ID's to their symbolic "
+"name.\n"
 msgstr ""
 "<val><extension>   設定頁首延伸使用的於匯出標頭檔\n"
 "  -F --target <target>         指定輸出目標用於尾序。\n"
@@ -12082,7 +12129,8 @@ msgid ""
 "  -v --verbose                 Verbose - tells you what it's doing\n"
 "  -c --codepage=<codepage>     Specify default codepage\n"
 "  -l --language=<val>          Set language when reading rc file\n"
-"     --use-temp-file           Use a temporary file instead of popen to read\n"
+"     --use-temp-file           Use a temporary file instead of popen to "
+"read\n"
 "                               the preprocessor output\n"
 "     --no-use-temp-file        Use popen (default)\n"
 msgstr ""
@@ -12140,7 +12188,8 @@ msgstr "在選項 -fo 之後沒有檔名。\n"
 #: windres.c:954
 #, c-format
 msgid ""
-"Option -I is deprecated for setting the input format, please use -J instead.\n"
+"Option -I is deprecated for setting the input format, please use -J "
+"instead.\n"
 msgstr "選項 -I 用做設定輸入格式已過時，請使用 -J 代替。\n"
 
 #: windres.c:1067
@@ -12161,333 +12210,3 @@ msgstr "stab_int_type：錯誤大小 %u"
 #, c-format
 msgid "%s: warning: unknown size for field `%s' in struct"
 msgstr "%s：警告：結構中「%s」欄位的大小未知"
-
-#~ msgid "The information in section %s appears to be corrupt - the section is too small\n"
-#~ msgstr "位於區段 %s 中的列資訊似乎已損壞 - 區段過小\n"
-
-#~ msgid "unexpected end of debugging information"
-#~ msgstr "除錯資訊意外結束"
-
-#~ msgid "invalid number"
-#~ msgstr "無效的編號"
-
-#~ msgid "invalid string length"
-#~ msgstr "無效的字串長度"
-
-#~ msgid "expression stack overflow"
-#~ msgstr "表示式堆疊向上溢出"
-
-#~ msgid "unsupported IEEE expression operator"
-#~ msgstr "不支援的 IEEE 表示式運算子"
-
-#~ msgid "unknown section"
-#~ msgstr "未知的區段"
-
-#~ msgid "expression stack underflow"
-#~ msgstr "表示式堆疊向下溢出"
-
-#~ msgid "expression stack mismatch"
-#~ msgstr "表示式堆疊不匹配"
-
-#~ msgid "unknown builtin type"
-#~ msgstr "未知的內建類型"
-
-#~ msgid "unexpected number"
-#~ msgstr "意外的編號"
-
-#~ msgid "unexpected record type"
-#~ msgstr "意外的紀錄類型"
-
-#~ msgid "blocks left on stack at end"
-#~ msgstr "結束時仍留在堆疊中的區塊"
-
-#~ msgid "stack underflow"
-#~ msgstr "堆疊向下溢出"
-
-#~ msgid "illegal variable index"
-#~ msgstr "不正確的變數索引"
-
-#~ msgid "illegal type index"
-#~ msgstr "不正確的類型索引"
-
-#~ msgid "unknown TY code"
-#~ msgstr "未知的 TY 代碼"
-
-#~ msgid "undefined variable in TY"
-#~ msgstr "TY 中未定義的變量"
-
-#~ msgid "Pascal file name not supported"
-#~ msgstr "不支援 Pascal 檔案名"
-
-#~ msgid "unsupported qualifier"
-#~ msgstr "不支援的限定符號"
-
-#~ msgid "undefined variable in ATN"
-#~ msgstr "ATN 中未定義的變數"
-
-#~ msgid "unknown ATN type"
-#~ msgstr "未知的 ATN 類型"
-
-#~ msgid "unsupported ATN11"
-#~ msgstr "不支援 ATN11"
-
-#~ msgid "unsupported ATN12"
-#~ msgstr "不支援 ATN12"
-
-#~ msgid "unexpected string in C++ misc"
-#~ msgstr "意外的 C++ 雜項字串"
-
-#~ msgid "bad misc record"
-#~ msgstr "不良的雜項記錄"
-
-#~ msgid "unrecognized C++ misc record"
-#~ msgstr "無法識別的 C++ 雜項紀錄"
-
-#~ msgid "undefined C++ object"
-#~ msgstr "未定義的 C++ 物件"
-
-#~ msgid "unrecognized C++ object spec"
-#~ msgstr "無法識別的 C++ 物件規格"
-
-#~ msgid "unsupported C++ object type"
-#~ msgstr "不支援的 C++ 物件類型"
-
-#~ msgid "C++ base class not defined"
-#~ msgstr "未定義 C++ 基本類別"
-
-#~ msgid "C++ object has no fields"
-#~ msgstr "C++ 物件沒有欄位"
-
-#~ msgid "C++ base class not found in container"
-#~ msgstr "容器中找不到 C++ 基本類別"
-
-#~ msgid "C++ data member not found in container"
-#~ msgstr "容器中找不到 C++ 資料成員"
-
-#~ msgid "unknown C++ visibility"
-#~ msgstr "未知的 C++ 可見度"
-
-#~ msgid "bad C++ field bit pos or size"
-#~ msgstr "不良的 C++ 欄位位元位置或大小"
-
-#~ msgid "bad type for C++ method function"
-#~ msgstr "不良的 C++ 方法函式類型"
-
-#~ msgid "no type information for C++ method function"
-#~ msgstr "對於 C++ 方法函式沒有類型資訊"
-
-#~ msgid "C++ static virtual method"
-#~ msgstr "C++ 靜態虛擬方法"
-
-#~ msgid "unrecognized C++ object overhead spec"
-#~ msgstr "無法識別的 C++ 物件頂層規格"
-
-#~ msgid "undefined C++ vtable"
-#~ msgstr "未定義的 C++ vtable"
-
-#~ msgid "C++ default values not in a function"
-#~ msgstr "C++ 預設值不在函式之中"
-
-#~ msgid "unrecognized C++ default type"
-#~ msgstr "無法識別的 C++ 預設類型"
-
-#~ msgid "reference parameter is not a pointer"
-#~ msgstr "參考參數不是指標"
-
-#~ msgid "unrecognized C++ reference type"
-#~ msgstr "無法識別的 C++ 參考類型"
-
-#~ msgid "C++ reference is not pointer"
-#~ msgstr "C++ 參考不是指標"
-
-#~ msgid "missing required ASN"
-#~ msgstr "遺失必須的 ASN"
-
-#~ msgid "missing required ATN65"
-#~ msgstr "遺失必須的 ATN65"
-
-#~ msgid "bad ATN65 record"
-#~ msgstr "不良的 ATN65 記錄"
-
-#~ msgid "IEEE numeric overflow: 0x"
-#~ msgstr "IEEE 數值溢出：0x"
-
-#~ msgid "IEEE string length overflow: %u\n"
-#~ msgstr "IEEE 字串長度溢出：%u\n"
-
-#~ msgid "IEEE unsupported float type size %u\n"
-#~ msgstr "IEEE 不支援的浮點類型大小 %u\n"
-
-#~ msgid "input file named both on command line and with INPUT"
-#~ msgstr "同時在命令列和 INPUT 中輸入檔案名稱"
-
-#~ msgid "no input file"
-#~ msgstr "沒有輸入檔案"
-
-#~ msgid "no name for output file"
-#~ msgstr "輸出檔案沒有名稱"
-
-#~ msgid "warning: input and output formats are not compatible"
-#~ msgstr "警告：輸入和輸出格式不相容"
-
-#~ msgid "make .bss section"
-#~ msgstr "產生 .bss 區段"
-
-#~ msgid "make .nlmsections section"
-#~ msgstr "產生 .nlmsections 區段"
-
-#~ msgid "set .bss vma"
-#~ msgstr "設定 .bss vma"
-
-#~ msgid "set .data size"
-#~ msgstr "設定 .data 的大小"
-
-#~ msgid "warning: symbol %s imported but not in import list"
-#~ msgstr "警告：導入的符號 %s 不在導入列表中"
-
-#~ msgid "set start address"
-#~ msgstr "設定起始位址"
-
-#~ msgid "warning: START procedure %s not defined"
-#~ msgstr "警告：未定義 START 子程序 %s"
-
-#~ msgid "warning: EXIT procedure %s not defined"
-#~ msgstr "警告：未定義 EXIT 子程序 %s"
-
-#~ msgid "warning: CHECK procedure %s not defined"
-#~ msgstr "警告：未定義 CHECK 子程序 %s"
-
-#~ msgid "custom section"
-#~ msgstr "自訂區段"
-
-#~ msgid "help section"
-#~ msgstr "輔助區段"
-
-#~ msgid "message section"
-#~ msgstr "訊息區段"
-
-#~ msgid "module section"
-#~ msgstr "模組區段"
-
-#~ msgid "rpc section"
-#~ msgstr "rpc 區段"
-
-#~ msgid "%s: warning: shared libraries can not have uninitialized data"
-#~ msgstr "%s：警告：共享函式庫不能含有未初始化的資料"
-
-#~ msgid "shared section"
-#~ msgstr "共享區段"
-
-#~ msgid "warning: No version number given"
-#~ msgstr "警告：未指定版本號"
-
-#~ msgid "%s: read: %s"
-#~ msgstr "%s：讀取：%s"
-
-#~ msgid "warning: FULLMAP is not supported; try ld -M"
-#~ msgstr "警告：不支援 FULLMAP；請試用 ld -M"
-
-#~ msgid "Usage: %s [option(s)] [in-file [out-file]]\n"
-#~ msgstr "用法：%s [選項] [輸入檔案 [輸出檔案]]\n"
-
-#~ msgid " Convert an object file into a NetWare Loadable Module\n"
-#~ msgstr " 將物件檔案轉換為  NetWare 可載入模組\n"
-
-#, fuzzy
-#~ msgid ""
-#~ " The options are:\n"
-#~ "  -I --input-target=<bfdname>   Set the input binary file format\n"
-#~ "  -O --output-target=<bfdname>  Set the output binary file format\n"
-#~ "  -T --header-file=<file>       Read <file> for NLM header information\n"
-#~ "  -l --linker=<linker>          Use <linker> for any linking\n"
-#~ "  -d --debug                    Display on stderr the linker command line\n"
-#~ "  @<file>                       Read options from <file>.\n"
-#~ "  -h --help                     Display this information\n"
-#~ "  -v --version                  Display the program's version\n"
-#~ msgstr ""
-#~ " 選項是：\n"
-#~ "  -I --input-target=<bfdname>   設定輸入二進位檔案格式\n"
-#~ "  -O --output-target=<bfdname>  設定輸出二進位檔案格式\n"
-#~ "  -T --header-file=<file>       讀取 <file> 用於 NLM 頁首資訊\n"
-#~ "  -l --linker=<linker>          使用 <linker> 用於任何鏈結\n"
-#~ "  -d --debug                    顯示於標準勘誤鏈結器命令列\n"
-#~ " @<file>                       讀取選項從 <file>。\n"
-#~ "  -h --help                     顯示這個資訊\n"
-#~ "  -v --version                  顯示程式版本\n"
-
-#~ msgid "support not compiled in for %s"
-#~ msgstr "未將對於 %s 的支援編譯進去"
-
-#~ msgid "make section"
-#~ msgstr "製作區段"
-
-#~ msgid "set section size"
-#~ msgstr "設定區段大小"
-
-#~ msgid "set section alignment"
-#~ msgstr "設定區段對齊"
-
-#~ msgid "set section flags"
-#~ msgstr "設定區段旗標"
-
-#~ msgid "set .nlmsections size"
-#~ msgstr "設定 .nlmsections 大小"
-
-#~ msgid "set .nlmsection contents"
-#~ msgstr "設定 .nlmsection 內容"
-
-#~ msgid "writing stub"
-#~ msgstr "正在寫入佔位區段"
-
-#~ msgid "unresolved PC relative reloc against %s"
-#~ msgstr "無法解析的以 %s 為準之 PC 相對重定位"
-
-#~ msgid "overflow when adjusting relocation against %s"
-#~ msgstr "以 %s 為準對齊重定位時發生溢出"
-
-#~ msgid "%s: execution of %s failed: "
-#~ msgstr "%s：執行 %s 失敗："
-
-#~ msgid "Execution of %s failed"
-#~ msgstr "執行 %s 失敗"
-
-#~ msgid "data size %ld"
-#~ msgstr "資料大小 %ld"
-
-#~ msgid "Idx Name          Size      VMA       LMA       File off  Algn"
-#~ msgstr "索引名稱          大小      VMA       LMA       檔案關閉  對齊"
-
-#~ msgid "Idx Name          Size      VMA               LMA               File off  Algn"
-#~ msgstr "索引名稱          大小      VMA               LMA               檔案關閉 對齊"
-
-#, fuzzy
-#~ msgid "<no-name>"
-#~ msgstr "<no-name>"
-
-#, fuzzy
-#~ msgid "<unknown: %lx>"
-#~ msgstr "<unknown: %lx>"
-
-#~ msgid "File contains multiple symtab shndx tables\n"
-#~ msgstr "檔案含有多個符號分頁索引表\n"
-
-#~ msgid "'%s'"
-#~ msgstr "「%s」"
-
-#, fuzzy
-#~ msgid "Unable to seek to end of file!\n"
-#~ msgstr "無法尋指到檔案結尾！\n"
-
-#~ msgid "Unable to seek to end of file\n"
-#~ msgstr "無法搜索到檔案末尾\n"
-
-#, fuzzy
-#~ msgid "| <unknown>"
-#~ msgstr "|<unknown>"
-
-#, fuzzy
-#~ msgid "Any\n"
-#~ msgstr "任何\n"
-
-#~ msgid "No mangling for \"%s\"\n"
-#~ msgstr "\"%s\" 沒有損壞\n"
