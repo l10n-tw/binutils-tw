@@ -10,16 +10,16 @@ msgstr ""
 "Project-Id-Version: binutils 2.31.90\n"
 "Report-Msgid-Bugs-To: bug-binutils@gnu.org\n"
 "POT-Creation-Date: 2019-01-19 16:32+0000\n"
-"PO-Revision-Date: 2019-10-11 01:58+0800\n"
+"PO-Revision-Date: 2019-12-15 21:07+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
-"Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
+"Language-Team: Chinese (traditional) <zh-l10n@lists.linux.org.tw>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 19.08.1\n"
+"X-Generator: Lokalize 19.12.0\n"
 
 #: lib/argp-help.c:1688 cxxfilt.c:124 nm.c:295 objdump.c:291
 #, c-format
@@ -1483,8 +1483,7 @@ msgstr "   -t --temp-prefix <前置>   使用 <前置> 來建構臨時檔案名�
 msgid ""
 "   -I --identify <implib>    Report the name of the DLL associated with "
 "<implib>.\n"
-msgstr ""
-"   -I --identify <implib>    報告名稱的動態鏈結函式庫關聯的與 <implib>。\n"
+msgstr "   -I --identify <implib>    報告名稱的動態鏈結函式庫關聯的與 <implib>。\n"
 
 #: dlltool.c:3979
 #, fuzzy, c-format
@@ -1519,8 +1518,7 @@ msgstr "   @<file>                   從 <file> 讀取選項。\n"
 #, c-format
 msgid ""
 "   -M --mcore-elf <outname>  Process mcore-elf object files into <outname>.\n"
-msgstr ""
-"   -M --mcore-elf <輸出名稱> 處理 mcore-elf 物件檔案進入 <輸出名稱>。\n"
+msgstr "   -M --mcore-elf <輸出名稱> 處理 mcore-elf 物件檔案進入 <輸出名稱>。\n"
 
 #: dlltool.c:3986
 #, c-format
@@ -7036,8 +7034,7 @@ msgstr ""
 #, c-format
 msgid ""
 "  Offset          Info           Type           Sym. Value    Sym. Name\n"
-msgstr ""
-"  偏移量          資訊           類型           符號值        符號名稱\n"
+msgstr "  偏移量          資訊           類型           符號值        符號名稱\n"
 
 #: readelf.c:1586 readelf.c:1776 readelf.c:1784
 #, c-format
@@ -7558,8 +7555,7 @@ msgstr ""
 #, c-format
 msgid ""
 "  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align\n"
-msgstr ""
-"  類型           偏移量   虛擬位址   實體位址 檔案大小 記憶大小 旗標 對齊\n"
+msgstr "  類型           偏移量   虛擬位址   實體位址 檔案大小 記憶大小 旗標 對齊\n"
 
 #: readelf.c:5060
 #, c-format
@@ -7859,7 +7855,7 @@ msgid ""
 "Flg Lk Inf Al\n"
 msgstr ""
 "  [號] 名稱              類型            位址            偏移    大小   全 "
-"標  連 資  齊\n"
+"旗  連 資  齊\n"
 
 #: readelf.c:6296
 #, fuzzy, c-format
